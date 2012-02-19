@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+	<property>
+	  <name>http.agent.name</name>
+	  <value>YOUR_NAME Nutch spider</value>
+	  <description>Test spider</description>
+	</property>
+
+	<property>
+	  <name>http.agent.url</name>
+	  <value>http://YOUR_DOMAIN.com</value>
+	  <description>URL of spider server</description>
+	</property>
+
+	<property>
+	  <name>http.agent.email</name>
+	  <value></value>
+	  <description>YOUR_EMAIL_NAME at YOUR_DOMAIN dot com</description>
+	</property>
+</configuration>

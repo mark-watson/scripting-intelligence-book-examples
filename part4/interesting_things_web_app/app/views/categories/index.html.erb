@@ -1,0 +1,40 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+       "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+    <head>
+      <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+      <title>Interesting Things: Categories <%= @title %></title>
+      <%= stylesheet_link_tag "site" %>
+      <%= javascript_include_tag :defaults %>  
+    </head>
+
+    <body>
+
+      <div id="nav">
+        <%= link_to_unless_current "Home", :controller => "home" %> |
+        <%= link_to_unless_current "Categories", :controller => "categories" %> | 
+        <%= link_to_unless_current "Admin", :controller => "admin" %> |
+        <%= link_to_unless_current "Web Service Info", :controller => "info" %> 
+      </div>    
+
+      <div valign="top">
+         <form action="/categories" method="get">
+		   <%= text_field_with_auto_complete :document_category, :category_name,
+		                                     :size => 36, :value => @category_display_name %>
+           <input type="submit" value="Browse category"/>
+         </form>    
+      </div>
+
+        <h3>Results:</h3>
+        <%  @doc_list.each {|doc| %>
+	        <!--  NOTE: I am reusing a method in the home controller and a home view fragment 'result_detail': -->
+	        <%= link_to_remote "#{doc.original_source_uri}",
+		                   :url => "/home/result_detail?doc_id=#{doc.id}",
+		                   :update => 'cat_results' %>
+		    <br/>
+	    <%  } %>
+	    <p id="cat_results"></p>
+    </body>
+</html>

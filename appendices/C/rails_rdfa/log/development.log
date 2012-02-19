@@ -1,0 +1,8 @@
+# Logfile created on Sat Jul 11 13:52:35 -0700 2009  [4;36;1mSQL (56.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing IndexController#index (for 127.0.0.1 at 2009-07-11 13:52:47) [GET]
+Rendering index/index
+DEPRECATION WARNING: The binding argument of #concat is no longer needed.  Please remove it from your views and helpers.. (called from rdfa_write_block at /Users/markw/bin/ruby/lib/ruby/gems/1.8/gems/rdfa-0.0.8/lib/rdfa/base.rb:94)
+DEPRECATION WARNING: The binding argument of #concat is no longer needed.  Please remove it from your views and helpers.. (called from rdfa_write_block at /Users/markw/bin/ruby/lib/ruby/gems/1.8/gems/rdfa-0.0.8/lib/rdfa/base.rb:94)
+Completed in 79ms (View: 78, DB: 56) | 200 OK [http://localhost/]

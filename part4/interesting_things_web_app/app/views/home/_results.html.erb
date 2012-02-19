@@ -1,0 +1,72 @@
+
+<h4>Selected interesting thing: <%=@doc.original_source_uri%></h4>
+&quot;<%=@doc.summary[0..80]%>&quot;<br/><br/>
+
+<image src="images/bulb.png"/><%= link_to_function "View text", "$('view_text').toggle();"%>
+<image src="images/edit.png"/><%= link_to_function "Edit summary", "$('generated_summary').toggle();"%>
+<image src="images/edit.png"/><%= link_to_function "Edit categories", "$('category_edit').toggle();"%>
+<image src="images/bulb.png"/><%= link_to_function "View similar things", "$('similar_things').toggle();"%>
+
+
+<div id="view_text"style="display:none; width:65%">
+<%=
+  hilite_words = session['search_text'].split
+  text = @doc.plain_text
+  hilite_words.each {|word|
+     text = text.gsub(/#{word}\b/i) {|w| "<font color=\"red\">#{w}</font>"}}
+  text
+%>
+</div>
+
+<div id="generated_summary"style="display:none">
+<% remote_form_for :document, @doc, :update => 'status_results', :url => { :action => "update_summary" } do |f| %>
+  <%=text_area(:doc, :summary, :size => "40x4")%>
+  <%=hidden_field(:doc, :id)%>
+  <br/><%= submit_tag 'Modify' %>
+<% end %>
+</div>
+
+
+<div id="category_edit" style="display:none">
+<% remote_form_for :document, @doc, :update => 'status_results', :url => { :action => "update_categories" } do |f| %>
+  <%=hidden_field(:doc, :id)%>
+  <table>
+  <% @all_cats.each_with_index { |cn, count|
+       if count == 0  %>
+         <tr>
+  <%   end
+       if @dcs.include?(cn)  %>
+         <td><%=cn%>:</td>
+         <td><%=check_box_tag(cn, "1", true)%></td>
+         <td style="width:5">
+  <%   else%>
+         <td><%=cn%>:</td>
+         <td><%=check_box_tag(cn, "0", false)%></td>
+         <td style="width:5">
+  <%   end 
+       if (count + 1) % 3 == 0 %>
+          </tr>
+  <%   end
+     }  %>
+  </table>
+  <%= submit_tag 'Modify' %>
+<% end %>
+</div>
+
+
+<div id="similar_things"style="display:none">
+ <table>
+    <tr><td><strong>ID</strong></td><td>&nbsp;&nbsp;</td><td><strong>Name</strong></td><td>&nbsp;&nbsp;</td><td><strong>Similarity</strong></td></tr>
+<% @doc.get_similar_document_ids.each {|other_doc_id, strength|
+     other_doc = Document.find(other_doc_id)
+%>
+     <tr>
+       <td><%=other_doc.id%></td>
+       <td>&nbsp;&nbsp;</td>
+       <td><%=other_doc.original_source_uri.strip%></td>
+       <td>&nbsp;&nbsp;</td>
+       <td><%=strength%></td>
+    </tr>
+<% } %>
+  </table>  
+</div>

@@ -1,0 +1,7 @@
+History.txt
+Manifest.txt
+README.txt
+Rakefile
+bin/sparql_endpoint_web_service
+lib/sparql_endpoint_web_service.rb
+test/test_sparql_endpoint_web_service.rb

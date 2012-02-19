@@ -1,0 +1,33 @@
+@prefix kb: <http://knowledgebooks.com/test#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+kb:Recipe a rdfs:Class;
+     rdfs:label "Recipe".
+
+kb:similarRecipeName a rdf:Property ;
+     rdfs:domain kb:Recipe;
+     rdfs:range kb:Recipe .
+
+kb:similarRecipeIngredients a rdf:Property ;
+     rdfs:domain kb:Recipe;
+     rdfs:range kb:Recipe .
+
+kb:recipeName a rdf:Property;
+     rdfs:domain kb:Recipe;
+     rdfs:range <http://www.w3.org/2001/XMLSchema#stringstring> .
+
+<http://cjskitchen.com/printpage.jsp?recipe_id=8625327> a kb:Recipe .
+<http://cjskitchen.com/printpage.jsp?recipe_id=8625327> kb:recipeName "Barbecued Cornish Game Hens" .
+
+<http://cookingspace.com/site/show_recipe/3> a kb:Recipe .
+<http://cookingspace.com/site/show_recipe/3> kb:recipeName "Barbecued Cornish Game Hens" .
+
+<http://cjskitchen.com/printpage.jsp?recipe_id=8625327>
+   kb:similarRecipeName
+   <http://cookingspace.com/site/show_recipe/3> .
+
+<http://cookingspace.com/site/show_recipe/3>
+   kb:similarRecipeName
+   <http://cjskitchen.com/printpage.jsp?recipe_id=8625327> .
+

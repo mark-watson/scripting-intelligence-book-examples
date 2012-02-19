@@ -1,0 +1,149 @@
+<?xml version='1.0' encoding='UTF-8'?>
+
+
+
+  <rdf:RDF xmlns:c='http://s.opencalais.com/1/pred/' xmlns:rdf='http://www.w3.org/1999/02/22-rdf-syntax-ns#'>
+    <rdf:Description c:calaisRequestID='447196cf-8ed7-47a5-a1fc-f9de5ddbb9b0' c:id='http://id.opencalais.com/*FwPSrPOZRf1Pan6bdOetQ' c:allowDistribution='true' c:externalID='17cabs901' rdf:about='http://d.opencalais.com/dochash-1/21e3c419-8096-3487-a8b2-447eb9982b1d' c:allowSearch='true'>
+      <rdf:type rdf:resource='http://s.opencalais.com/1/type/sys/DocInfo'/>
+      <c:document><![CDATA[<Document><Date>2009-03-18</Date><Body>President George Bush and President Barack Obama played basketball.</Body></Document>]]></c:document>
+      <c:docTitle/>
+      <c:docDate>2009-03-18 00:00:00</c:docDate>
+      <c:externalMetadata/>
+      <c:submitter>ABC</c:submitter>
+    </rdf:Description>
+    <rdf:Description c:language='InputTextTooShort' c:processingVer='CalaisJob01' rdf:about='http://d.opencalais.com/dochash-1/21e3c419-8096-3487-a8b2-447eb9982b1d/meta' c:contentType='text/txt' c:submissionDate='2009-03-18 14:49:32.646' c:langIdVer='DefaultLangId' c:emVer='UserVocabulariesIM'>
+      <rdf:type rdf:resource='http://s.opencalais.com/1/type/sys/DocInfoMeta'/>
+      <c:docId rdf:resource='http://d.opencalais.com/dochash-1/21e3c419-8096-3487-a8b2-447eb9982b1d'/>
+      <c:submitterCode>4d3ce80b-15bb-4989-900a-80aeaeb3257a</c:submitterCode>
+      <c:signature>digestalg-1|SI0KkQCio9lbbr2p9wDzgPVb+Ks=|DAuo0VCyQEdyrJJYGYMg/wjC+LF7YwMVrBjQYZEm8YQOIKFa2w4Xiw==</c:signature>
+    </rdf:Description>
+    <rdf:Description rdf:about='http://d.opencalais.com/dochash-1/21e3c419-8096-3487-a8b2-447eb9982b1d/lid/DefaultLangId'>
+      <rdf:type rdf:resource='http://s.opencalais.com/1/type/lid/DefaultLangId'/>
+      <c:docId rdf:resource='http://d.opencalais.com/dochash-1/21e3c419-8096-3487-a8b2-447eb9982b1d'/>
+      <c:lang rdf:resource='http://d.opencalais.com/lid/DefaultLangId/InputTextTooShort'/>
+    </rdf:Description>
+    <rdf:Description rdf:about='http://d.opencalais.com/pershash-1/cfcf1aa2-de05-3939-a7d5-10c9c7b3e87b'>
+      <rdf:type rdf:resource='http://s.opencalais.com/1/type/em/e/Person'/>
+      <c:name>Barack Obama</c:name>
+      <c:persontype>political</c:persontype>
+      <c:nationality>N/A</c:nationality>
+    </rdf:Description>
+    <rdf:Description rdf:about='http://d.opencalais.com/dochash-1/21e3c419-8096-3487-a8b2-447eb9982b1d/Instance/1'>
+      <rdf:type rdf:resource='http://s.opencalais.com/1/type/sys/InstanceInfo'/>
+      <c:docId rdf:resource='http://d.opencalais.com/dochash-1/21e3c419-8096-3487-a8b2-447eb9982b1d'/>
+      <c:subject rdf:resource='http://d.opencalais.com/pershash-1/cfcf1aa2-de05-3939-a7d5-10c9c7b3e87b'/>
+            <!--Person: Barack Obama; -->
+      <c:detection>[George Bush and President ]Barack Obama[ played basketball.&lt;/Body&gt;&lt;/Document&gt;]</c:detection>
+      <c:prefix>George Bush and President </c:prefix>
+      <c:exact>Barack Obama</c:exact>
+      <c:suffix> played basketball.&lt;/Body&gt;&lt;/Document&gt;</c:suffix>
+      <c:offset>75</c:offset>
+      <c:length>12</c:length>
+    </rdf:Description>
+    <rdf:Description rdf:about='http://d.opencalais.com/dochash-1/21e3c419-8096-3487-a8b2-447eb9982b1d/Relevance/1'>
+      <rdf:type rdf:resource='http://s.opencalais.com/1/type/sys/RelevanceInfo'/>
+      <c:docId rdf:resource='http://d.opencalais.com/dochash-1/21e3c419-8096-3487-a8b2-447eb9982b1d'/>
+      <c:subject rdf:resource='http://d.opencalais.com/pershash-1/cfcf1aa2-de05-3939-a7d5-10c9c7b3e87b'/>
+      <c:relevance>0.643</c:relevance>
+    </rdf:Description>
+    <rdf:Description rdf:about='http://d.opencalais.com/genericHasher-1/0d87e8a5-fb41-33c9-a1fb-bedf134b384e'>
+      <rdf:type rdf:resource='http://s.opencalais.com/1/type/em/e/Position'/>
+      <c:name>President </c:name>
+    </rdf:Description>
+    <rdf:Description rdf:about='http://d.opencalais.com/dochash-1/21e3c419-8096-3487-a8b2-447eb9982b1d/Instance/2'>
+      <rdf:type rdf:resource='http://s.opencalais.com/1/type/sys/InstanceInfo'/>
+      <c:docId rdf:resource='http://d.opencalais.com/dochash-1/21e3c419-8096-3487-a8b2-447eb9982b1d'/>
+      <c:subject rdf:resource='http://d.opencalais.com/genericHasher-1/0d87e8a5-fb41-33c9-a1fb-bedf134b384e'/>
+            <!--Position: President ; -->
+      <c:detection>[&lt;Document&gt;&lt;Date&gt;2009-03-18&lt;/Date&gt;&lt;Body&gt;]President[ George Bush and President Barack Obama played]</c:detection>
+      <c:prefix>&lt;Document&gt;&lt;Date&gt;2009-03-18&lt;/Date&gt;&lt;Body&gt;</c:prefix>
+      <c:exact>President</c:exact>
+      <c:suffix> George Bush and President Barack Obama played</c:suffix>
+      <c:offset>39</c:offset>
+      <c:length>9</c:length>
+    </rdf:Description>
+    <rdf:Description rdf:about='http://d.opencalais.com/dochash-1/21e3c419-8096-3487-a8b2-447eb9982b1d/Instance/3'>
+      <rdf:type rdf:resource='http://s.opencalais.com/1/type/sys/InstanceInfo'/>
+      <c:docId rdf:resource='http://d.opencalais.com/dochash-1/21e3c419-8096-3487-a8b2-447eb9982b1d'/>
+      <c:subject rdf:resource='http://d.opencalais.com/genericHasher-1/0d87e8a5-fb41-33c9-a1fb-bedf134b384e'/>
+            <!--Position: President ; -->
+      <c:detection>[&gt;2009-03-18&lt;/Date&gt;&lt;Body&gt;President George Bush and ]President[ Barack Obama played basketball.&lt;/Body&gt;&lt;/Document&gt;]</c:detection>
+      <c:prefix>&gt;2009-03-18&lt;/Date&gt;&lt;Body&gt;President George Bush and </c:prefix>
+      <c:exact>President</c:exact>
+      <c:suffix> Barack Obama played basketball.&lt;/Body&gt;&lt;/Document&gt;</c:suffix>
+      <c:offset>65</c:offset>
+      <c:length>9</c:length>
+    </rdf:Description>
+    <rdf:Description rdf:about='http://d.opencalais.com/dochash-1/21e3c419-8096-3487-a8b2-447eb9982b1d/Relevance/2'>
+      <rdf:type rdf:resource='http://s.opencalais.com/1/type/sys/RelevanceInfo'/>
+      <c:docId rdf:resource='http://d.opencalais.com/dochash-1/21e3c419-8096-3487-a8b2-447eb9982b1d'/>
+      <c:subject rdf:resource='http://d.opencalais.com/genericHasher-1/0d87e8a5-fb41-33c9-a1fb-bedf134b384e'/>
+      <c:relevance>0.714</c:relevance>
+    </rdf:Description>
+    <rdf:Description rdf:about='http://d.opencalais.com/genericHasher-1/b0fd2e27-6d4d-3810-81ea-b2f9e9782964'>
+      <rdf:type rdf:resource='http://s.opencalais.com/1/type/em/r/PersonCareer'/>
+            <!--Barack Obama-->
+      <c:person rdf:resource='http://d.opencalais.com/pershash-1/cfcf1aa2-de05-3939-a7d5-10c9c7b3e87b'/>
+            <!--President -->
+      <c:position rdf:resource='http://d.opencalais.com/genericHasher-1/0d87e8a5-fb41-33c9-a1fb-bedf134b384e'/>
+      <c:careertype>political</c:careertype>
+      <c:status>current</c:status>
+    </rdf:Description>
+    <rdf:Description rdf:about='http://d.opencalais.com/dochash-1/21e3c419-8096-3487-a8b2-447eb9982b1d/Instance/4'>
+      <rdf:type rdf:resource='http://s.opencalais.com/1/type/sys/InstanceInfo'/>
+      <c:docId rdf:resource='http://d.opencalais.com/dochash-1/21e3c419-8096-3487-a8b2-447eb9982b1d'/>
+      <c:subject rdf:resource='http://d.opencalais.com/genericHasher-1/b0fd2e27-6d4d-3810-81ea-b2f9e9782964'/>
+            <!--PersonCareer: person: Barack Obama; position: President ; careertype: political; status: current; -->
+      <c:detection>[&gt;2009-03-18&lt;/Date&gt;&lt;Body&gt;President George Bush and ]President Barack Obama[ played basketball.&lt;/Body&gt;&lt;/Document&gt;]</c:detection>
+      <c:prefix>&gt;2009-03-18&lt;/Date&gt;&lt;Body&gt;President George Bush and </c:prefix>
+      <c:exact>President Barack Obama</c:exact>
+      <c:suffix> played basketball.&lt;/Body&gt;&lt;/Document&gt;</c:suffix>
+      <c:offset>65</c:offset>
+      <c:length>22</c:length>
+    </rdf:Description>
+    <rdf:Description rdf:about='http://d.opencalais.com/pershash-1/63b9ca66-bfdb-3533-9a19-8b1110336b5c'>
+      <rdf:type rdf:resource='http://s.opencalais.com/1/type/em/e/Person'/>
+      <c:name>George Bush</c:name>
+      <c:persontype>political</c:persontype>
+      <c:nationality>N/A</c:nationality>
+    </rdf:Description>
+    <rdf:Description rdf:about='http://d.opencalais.com/dochash-1/21e3c419-8096-3487-a8b2-447eb9982b1d/Instance/5'>
+      <rdf:type rdf:resource='http://s.opencalais.com/1/type/sys/InstanceInfo'/>
+      <c:docId rdf:resource='http://d.opencalais.com/dochash-1/21e3c419-8096-3487-a8b2-447eb9982b1d'/>
+      <c:subject rdf:resource='http://d.opencalais.com/pershash-1/63b9ca66-bfdb-3533-9a19-8b1110336b5c'/>
+            <!--Person: George Bush; -->
+      <c:detection>[&lt;Document&gt;&lt;Date&gt;2009-03-18&lt;/Date&gt;&lt;Body&gt;President ]George Bush[ and President Barack Obama played]</c:detection>
+      <c:prefix>&lt;Document&gt;&lt;Date&gt;2009-03-18&lt;/Date&gt;&lt;Body&gt;President </c:prefix>
+      <c:exact>George Bush</c:exact>
+      <c:suffix> and President Barack Obama played</c:suffix>
+      <c:offset>49</c:offset>
+      <c:length>11</c:length>
+    </rdf:Description>
+    <rdf:Description rdf:about='http://d.opencalais.com/dochash-1/21e3c419-8096-3487-a8b2-447eb9982b1d/Relevance/3'>
+      <rdf:type rdf:resource='http://s.opencalais.com/1/type/sys/RelevanceInfo'/>
+      <c:docId rdf:resource='http://d.opencalais.com/dochash-1/21e3c419-8096-3487-a8b2-447eb9982b1d'/>
+      <c:subject rdf:resource='http://d.opencalais.com/pershash-1/63b9ca66-bfdb-3533-9a19-8b1110336b5c'/>
+      <c:relevance>0.643</c:relevance>
+    </rdf:Description>
+    <rdf:Description rdf:about='http://d.opencalais.com/genericHasher-1/739b6d50-c167-3f25-a18a-a15da7d345f7'>
+      <rdf:type rdf:resource='http://s.opencalais.com/1/type/em/r/PersonCareer'/>
+            <!--George Bush-->
+      <c:person rdf:resource='http://d.opencalais.com/pershash-1/63b9ca66-bfdb-3533-9a19-8b1110336b5c'/>
+            <!--President -->
+      <c:position rdf:resource='http://d.opencalais.com/genericHasher-1/0d87e8a5-fb41-33c9-a1fb-bedf134b384e'/>
+      <c:careertype>political</c:careertype>
+      <c:status>current</c:status>
+    </rdf:Description>
+    <rdf:Description rdf:about='http://d.opencalais.com/dochash-1/21e3c419-8096-3487-a8b2-447eb9982b1d/Instance/6'>
+      <rdf:type rdf:resource='http://s.opencalais.com/1/type/sys/InstanceInfo'/>
+      <c:docId rdf:resource='http://d.opencalais.com/dochash-1/21e3c419-8096-3487-a8b2-447eb9982b1d'/>
+      <c:subject rdf:resource='http://d.opencalais.com/genericHasher-1/739b6d50-c167-3f25-a18a-a15da7d345f7'/>
+            <!--PersonCareer: person: George Bush; position: President ; careertype: political; status: current; -->
+      <c:detection>[&lt;Document&gt;&lt;Date&gt;2009-03-18&lt;/Date&gt;&lt;Body&gt;]President George Bush[ and President Barack Obama played]</c:detection>
+      <c:prefix>&lt;Document&gt;&lt;Date&gt;2009-03-18&lt;/Date&gt;&lt;Body&gt;</c:prefix>
+      <c:exact>President George Bush</c:exact>
+      <c:suffix> and President Barack Obama played</c:suffix>
+      <c:offset>39</c:offset>
+      <c:length>21</c:length>
+    </rdf:Description>
+  </rdf:RDF>

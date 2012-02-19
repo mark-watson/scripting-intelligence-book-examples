@@ -1,0 +1,12 @@
+# -*- ruby -*-
+
+require 'rubygems'
+require 'hoe'
+require './lib/sparql_endpoint_web_service.rb'
+
+Hoe.new('sparql_endpoint_web_service', SparqlEndpointWebService::VERSION) do |p|
+  # p.rubyforge_name = 'sparql_endpoint_web_servicex' # if different than lowercase project name
+  p.developer('Mark Watson', 'markw@markwatson.com')
+end
+
+# vim: syntax=Ruby

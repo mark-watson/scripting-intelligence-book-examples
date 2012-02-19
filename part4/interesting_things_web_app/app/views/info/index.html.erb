@@ -1,0 +1,30 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+       "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+    <head>
+      <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+      <title>Interesting Things: Summaries<%= @title %></title>
+      <%= stylesheet_link_tag "site" %>
+      <%= javascript_include_tag :defaults %>  
+    </head>
+
+    <body>
+
+      <div id="nav">
+        <%= link_to_unless_current "Home", :controller => "home" %> |
+        <%= link_to_unless_current "Categories", :controller => "categories" %> | 
+        <%= link_to_unless_current "Admin", :controller => "admin" %> |
+        <%= link_to_unless_current "Web Service Info", :controller => "info" %> 
+      </div>    
+
+      <h3>Webservices that return JSON data</h3>
+      <p>The simplest way to document the APIs is to provides some examples:</p>
+      <pre>
+	      http://localhost:3000/web_services/category_names
+	      http://localhost:3000/web_services/interesting_thing_by_id?id=2
+	      http://localhost:3000/web_services/search?q=java+jsp
+	  </pre>
+    </body>
+</html>

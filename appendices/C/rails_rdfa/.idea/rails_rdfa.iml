@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module relativePaths="false" type="RUBY_MODULE" version="4">
+  <component name="FacetManager">
+    <facet type="RailsFacetType" name="Ruby on Rails">
+      <configuration>
+        <RAILS_FACET_CONFIG_ID NAME="SHOULD_USE_RSPEC_PLUGIN" VALUE="false" />
+        <RAILS_FACET_CONFIG_ID NAME="RAILS_FACET_SUPPORT_REMOVED" VALUE="false" />
+        <RAILS_FACET_CONFIG_ID NAME="RAILS_TESTS_SOURCES_PATCHED" VALUE="true" />
+        <RAILS_FACET_CONFIG_ID NAME="RAILS_FACET_APPLICATION_ROOT" VALUE="$MODULE_DIR$" />
+      </configuration>
+    </facet>
+  </component>
+  <component name="NewModuleRootManager">
+    <content url="file://$MODULE_DIR$">
+      <excludeFolder url="file://$MODULE_DIR$/tmp" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="[gem] actionmailer (v2.2.2, /home/markw/.gem/ruby/1.8/gems/actionmailer-2.2.2)" level="application" />
+    <orderEntry type="library" name="[gem] rake (v0.8.4, /home/markw/.gem/ruby/1.8/gems/rake-0.8.4)" level="application" />
+    <orderEntry type="library" name="[gem] activerecord (v2.2.2, /home/markw/.gem/ruby/1.8/gems/activerecord-2.2.2)" level="application" />
+    <orderEntry type="library" name="[gem] activesupport (v2.2.2, /home/markw/.gem/ruby/1.8/gems/activesupport-2.2.2)" level="application" />
+    <orderEntry type="library" name="[gem] rails (v2.2.2, /home/markw/.gem/ruby/1.8/gems/rails-2.2.2)" level="application" />
+    <orderEntry type="library" name="[gem] activeresource (v2.2.2, /home/markw/.gem/ruby/1.8/gems/activeresource-2.2.2)" level="application" />
+    <orderEntry type="library" name="[gem] actionpack (v2.2.2, /home/markw/.gem/ruby/1.8/gems/actionpack-2.2.2)" level="application" />
+  </component>
+  <component name="RModuleSettingsStorage">
+    <RMODULE_SETTINGS_STORAGE_ID NAME="NUMBER" VALUE="0" />
+  </component>
+</module>
+

@@ -1,0 +1,76 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+       "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+    <head>
+      <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+      <title>Interesting Things: Home <%= @title %></title>
+      <%= stylesheet_link_tag "site" %>
+      <%= javascript_include_tag :defaults %>  
+    </head>
+
+    <body>
+
+      <div id="nav">
+        <%= link_to_unless_current "Home", :controller => "home" %> |
+        <%= link_to_unless_current "Categories", :controller => "categories" %> | 
+        <%= link_to_unless_current "Admin", :controller => "admin" %> |
+        <%= link_to_unless_current "Web Service Info", :controller => "info" %> 
+      </div>    
+
+	  <div>
+	      <div class="left">
+	         <form action="/" method="get">
+	           <input type="text" size="30" name="search_text" value="<%=@query%>"/>
+	           <input type="submit" value="Search"/>
+	         </form> 
+	        </div>
+
+	        <div class="right" valign="top">
+	            <h4>Notice something new:</h4>
+	            <p><strong>Load a local file:</strong></p>
+		
+				<form action="/home/upload" method="post" enctype="multipart/form-data">
+				  <input type="file" name="uploaded_file" /><br />
+				  <input type="submit" />
+				</form>
+				<br/><p id="upload_status"></p>
+
+	            <p><strong>Load a web page by URL:</strong></p>
+				<form action="/home/get_url" method="post">
+				  URL: <input type="text" name="web_url" /><br />
+				  <input type="submit" />
+				</form>
+
+				<br/><p id="web_upload_status"></p>
+	        </div>
+            <br/>
+	        <h4>Results:</h4>
+	        <form target="unused_frame" action="/home/result_detail" method="post">
+	        <table>
+	         <% @results.each do |result|
+                 links = ''
+                 if result.original_source_uri[0..6] == "http://" || result.original_source_uri[0..7] == "https://"
+                     links = "<image src=\"images/eye.png\"/><a href=\"#{result.original_source_uri}\" target=\"new\">visit site</a>"
+                 else
+                     links = "<image src=\"images/book.png\"/><a href=\"/home/download?doc_id=#{result.id}\">Download document</a>"
+                 end
+                 result.original_source_uri.length > 53 ? dots = '...' : dots = ''
+             %>
+              <tr>
+                        <td><%=  link_to_remote "#{result.original_source_uri[0..52] + dots}",
+		                   :url => "/home/result_detail?doc_id=#{result.id}",
+                                :update => 'doc_results' %></td>
+                <td width="5"/>
+                <td><%= links %></td>
+              </tr>
+             <% end %>
+	         </table>
+             </form>
+	         <p id="doc_results"></p>
+	         <p id="status_results"></p>
+         </div>
+         <iframe id="unused_frame" name="web_get_frame" style="display: none"></iframe>
+    </body>
+</html>

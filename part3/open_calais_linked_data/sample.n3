@@ -1,0 +1,136 @@
+#Processed by Id: cwm.py,v 1.197 2007/12/13 15:38:39 syosi Exp 
+        #    using base file:///Users/markw/Documents/WORK/ruby_scripting_book/src/part3/open_calais_linked_data/sample.rdf
+        
+#  Notation3 generation by
+#       notation3.py,v 1.200 2007/12/11 21:18:08 syosi Exp
+
+#   Base was: file:///Users/markw/Documents/WORK/ruby_scripting_book/src/part3/open_calais_linked_data/sample.rdf
+    
+    <http://d.opencalais.com/dochash-1/21e3c419-8096-3487-a8b2-447eb9982b1d>     a <http://s.opencalais.com/1/type/sys/DocInfo>;
+         <http://s.opencalais.com/1/pred/allowDistribution> "true";
+         <http://s.opencalais.com/1/pred/allowSearch> "true";
+         <http://s.opencalais.com/1/pred/calaisRequestID> "447196cf-8ed7-47a5-a1fc-f9de5ddbb9b0";
+         <http://s.opencalais.com/1/pred/docDate> "2009-03-18 00:00:00";
+         <http://s.opencalais.com/1/pred/docTitle> "";
+         <http://s.opencalais.com/1/pred/document> "<Document><Date>2009-03-18</Date><Body>President George Bush and President Barack Obama played basketball.</Body></Document>";
+         <http://s.opencalais.com/1/pred/externalID> "17cabs901";
+         <http://s.opencalais.com/1/pred/externalMetadata> "";
+         <http://s.opencalais.com/1/pred/id> "http://id.opencalais.com/*FwPSrPOZRf1Pan6bdOetQ";
+         <http://s.opencalais.com/1/pred/submitter> "ABC" .
+    
+    <http://d.opencalais.com/dochash-1/21e3c419-8096-3487-a8b2-447eb9982b1d/Instance/1>     a <http://s.opencalais.com/1/type/sys/InstanceInfo>;
+         <http://s.opencalais.com/1/pred/detection> "[George Bush and President ]Barack Obama[ played basketball.</Body></Document>]";
+         <http://s.opencalais.com/1/pred/docId> <http://d.opencalais.com/dochash-1/21e3c419-8096-3487-a8b2-447eb9982b1d>;
+         <http://s.opencalais.com/1/pred/exact> "Barack Obama";
+         <http://s.opencalais.com/1/pred/length> "12";
+         <http://s.opencalais.com/1/pred/offset> "75";
+         <http://s.opencalais.com/1/pred/prefix> "George Bush and President ";
+         <http://s.opencalais.com/1/pred/subject> <http://d.opencalais.com/pershash-1/cfcf1aa2-de05-3939-a7d5-10c9c7b3e87b>;
+         <http://s.opencalais.com/1/pred/suffix> " played basketball.</Body></Document>" .
+    
+    <http://d.opencalais.com/dochash-1/21e3c419-8096-3487-a8b2-447eb9982b1d/Instance/2>     a <http://s.opencalais.com/1/type/sys/InstanceInfo>;
+         <http://s.opencalais.com/1/pred/detection> "[<Document><Date>2009-03-18</Date><Body>]President[ George Bush and President Barack Obama played]";
+         <http://s.opencalais.com/1/pred/docId> <http://d.opencalais.com/dochash-1/21e3c419-8096-3487-a8b2-447eb9982b1d>;
+         <http://s.opencalais.com/1/pred/exact> "President";
+         <http://s.opencalais.com/1/pred/length> "9";
+         <http://s.opencalais.com/1/pred/offset> "39";
+         <http://s.opencalais.com/1/pred/prefix> "<Document><Date>2009-03-18</Date><Body>";
+         <http://s.opencalais.com/1/pred/subject> <http://d.opencalais.com/genericHasher-1/0d87e8a5-fb41-33c9-a1fb-bedf134b384e>;
+         <http://s.opencalais.com/1/pred/suffix> " George Bush and President Barack Obama played" .
+    
+    <http://d.opencalais.com/dochash-1/21e3c419-8096-3487-a8b2-447eb9982b1d/Instance/3>     a <http://s.opencalais.com/1/type/sys/InstanceInfo>;
+         <http://s.opencalais.com/1/pred/detection> "[>2009-03-18</Date><Body>President George Bush and ]President[ Barack Obama played basketball.</Body></Document>]";
+         <http://s.opencalais.com/1/pred/docId> <http://d.opencalais.com/dochash-1/21e3c419-8096-3487-a8b2-447eb9982b1d>;
+         <http://s.opencalais.com/1/pred/exact> "President";
+         <http://s.opencalais.com/1/pred/length> "9";
+         <http://s.opencalais.com/1/pred/offset> "65";
+         <http://s.opencalais.com/1/pred/prefix> ">2009-03-18</Date><Body>President George Bush and ";
+         <http://s.opencalais.com/1/pred/subject> <http://d.opencalais.com/genericHasher-1/0d87e8a5-fb41-33c9-a1fb-bedf134b384e>;
+         <http://s.opencalais.com/1/pred/suffix> " Barack Obama played basketball.</Body></Document>" .
+    
+    <http://d.opencalais.com/dochash-1/21e3c419-8096-3487-a8b2-447eb9982b1d/Instance/4>     a <http://s.opencalais.com/1/type/sys/InstanceInfo>;
+         <http://s.opencalais.com/1/pred/detection> "[>2009-03-18</Date><Body>President George Bush and ]President Barack Obama[ played basketball.</Body></Document>]";
+         <http://s.opencalais.com/1/pred/docId> <http://d.opencalais.com/dochash-1/21e3c419-8096-3487-a8b2-447eb9982b1d>;
+         <http://s.opencalais.com/1/pred/exact> "President Barack Obama";
+         <http://s.opencalais.com/1/pred/length> "22";
+         <http://s.opencalais.com/1/pred/offset> "65";
+         <http://s.opencalais.com/1/pred/prefix> ">2009-03-18</Date><Body>President George Bush and ";
+         <http://s.opencalais.com/1/pred/subject> <http://d.opencalais.com/genericHasher-1/b0fd2e27-6d4d-3810-81ea-b2f9e9782964>;
+         <http://s.opencalais.com/1/pred/suffix> " played basketball.</Body></Document>" .
+    
+    <http://d.opencalais.com/dochash-1/21e3c419-8096-3487-a8b2-447eb9982b1d/Instance/5>     a <http://s.opencalais.com/1/type/sys/InstanceInfo>;
+         <http://s.opencalais.com/1/pred/detection> "[<Document><Date>2009-03-18</Date><Body>President ]George Bush[ and President Barack Obama played]";
+         <http://s.opencalais.com/1/pred/docId> <http://d.opencalais.com/dochash-1/21e3c419-8096-3487-a8b2-447eb9982b1d>;
+         <http://s.opencalais.com/1/pred/exact> "George Bush";
+         <http://s.opencalais.com/1/pred/length> "11";
+         <http://s.opencalais.com/1/pred/offset> "49";
+         <http://s.opencalais.com/1/pred/prefix> "<Document><Date>2009-03-18</Date><Body>President ";
+         <http://s.opencalais.com/1/pred/subject> <http://d.opencalais.com/pershash-1/63b9ca66-bfdb-3533-9a19-8b1110336b5c>;
+         <http://s.opencalais.com/1/pred/suffix> " and President Barack Obama played" .
+    
+    <http://d.opencalais.com/dochash-1/21e3c419-8096-3487-a8b2-447eb9982b1d/Instance/6>     a <http://s.opencalais.com/1/type/sys/InstanceInfo>;
+         <http://s.opencalais.com/1/pred/detection> "[<Document><Date>2009-03-18</Date><Body>]President George Bush[ and President Barack Obama played]";
+         <http://s.opencalais.com/1/pred/docId> <http://d.opencalais.com/dochash-1/21e3c419-8096-3487-a8b2-447eb9982b1d>;
+         <http://s.opencalais.com/1/pred/exact> "President George Bush";
+         <http://s.opencalais.com/1/pred/length> "21";
+         <http://s.opencalais.com/1/pred/offset> "39";
+         <http://s.opencalais.com/1/pred/prefix> "<Document><Date>2009-03-18</Date><Body>";
+         <http://s.opencalais.com/1/pred/subject> <http://d.opencalais.com/genericHasher-1/739b6d50-c167-3f25-a18a-a15da7d345f7>;
+         <http://s.opencalais.com/1/pred/suffix> " and President Barack Obama played" .
+    
+    <http://d.opencalais.com/dochash-1/21e3c419-8096-3487-a8b2-447eb9982b1d/Relevance/1>     a <http://s.opencalais.com/1/type/sys/RelevanceInfo>;
+         <http://s.opencalais.com/1/pred/docId> <http://d.opencalais.com/dochash-1/21e3c419-8096-3487-a8b2-447eb9982b1d>;
+         <http://s.opencalais.com/1/pred/relevance> "0.643";
+         <http://s.opencalais.com/1/pred/subject> <http://d.opencalais.com/pershash-1/cfcf1aa2-de05-3939-a7d5-10c9c7b3e87b> .
+    
+    <http://d.opencalais.com/dochash-1/21e3c419-8096-3487-a8b2-447eb9982b1d/Relevance/2>     a <http://s.opencalais.com/1/type/sys/RelevanceInfo>;
+         <http://s.opencalais.com/1/pred/docId> <http://d.opencalais.com/dochash-1/21e3c419-8096-3487-a8b2-447eb9982b1d>;
+         <http://s.opencalais.com/1/pred/relevance> "0.714";
+         <http://s.opencalais.com/1/pred/subject> <http://d.opencalais.com/genericHasher-1/0d87e8a5-fb41-33c9-a1fb-bedf134b384e> .
+    
+    <http://d.opencalais.com/dochash-1/21e3c419-8096-3487-a8b2-447eb9982b1d/Relevance/3>     a <http://s.opencalais.com/1/type/sys/RelevanceInfo>;
+         <http://s.opencalais.com/1/pred/docId> <http://d.opencalais.com/dochash-1/21e3c419-8096-3487-a8b2-447eb9982b1d>;
+         <http://s.opencalais.com/1/pred/relevance> "0.643";
+         <http://s.opencalais.com/1/pred/subject> <http://d.opencalais.com/pershash-1/63b9ca66-bfdb-3533-9a19-8b1110336b5c> .
+    
+    <http://d.opencalais.com/dochash-1/21e3c419-8096-3487-a8b2-447eb9982b1d/lid/DefaultLangId>     a <http://s.opencalais.com/1/type/lid/DefaultLangId>;
+         <http://s.opencalais.com/1/pred/docId> <http://d.opencalais.com/dochash-1/21e3c419-8096-3487-a8b2-447eb9982b1d>;
+         <http://s.opencalais.com/1/pred/lang> <http://d.opencalais.com/lid/DefaultLangId/InputTextTooShort> .
+    
+    <http://d.opencalais.com/dochash-1/21e3c419-8096-3487-a8b2-447eb9982b1d/meta>     a <http://s.opencalais.com/1/type/sys/DocInfoMeta>;
+         <http://s.opencalais.com/1/pred/contentType> "text/txt";
+         <http://s.opencalais.com/1/pred/docId> <http://d.opencalais.com/dochash-1/21e3c419-8096-3487-a8b2-447eb9982b1d>;
+         <http://s.opencalais.com/1/pred/emVer> "UserVocabulariesIM";
+         <http://s.opencalais.com/1/pred/langIdVer> "DefaultLangId";
+         <http://s.opencalais.com/1/pred/language> "InputTextTooShort";
+         <http://s.opencalais.com/1/pred/processingVer> "CalaisJob01";
+         <http://s.opencalais.com/1/pred/signature> "digestalg-1|SI0KkQCio9lbbr2p9wDzgPVb+Ks=|DAuo0VCyQEdyrJJYGYMg/wjC+LF7YwMVrBjQYZEm8YQOIKFa2w4Xiw==";
+         <http://s.opencalais.com/1/pred/submissionDate> "2009-03-18 14:49:32.646";
+         <http://s.opencalais.com/1/pred/submitterCode> "4d3ce80b-15bb-4989-900a-80aeaeb3257a" .
+    
+    <http://d.opencalais.com/genericHasher-1/0d87e8a5-fb41-33c9-a1fb-bedf134b384e>     a <http://s.opencalais.com/1/type/em/e/Position>;
+         <http://s.opencalais.com/1/pred/name> "President " .
+    
+    <http://d.opencalais.com/genericHasher-1/739b6d50-c167-3f25-a18a-a15da7d345f7>     a <http://s.opencalais.com/1/type/em/r/PersonCareer>;
+         <http://s.opencalais.com/1/pred/careertype> "political";
+         <http://s.opencalais.com/1/pred/person> <http://d.opencalais.com/pershash-1/63b9ca66-bfdb-3533-9a19-8b1110336b5c>;
+         <http://s.opencalais.com/1/pred/position> <http://d.opencalais.com/genericHasher-1/0d87e8a5-fb41-33c9-a1fb-bedf134b384e>;
+         <http://s.opencalais.com/1/pred/status> "current" .
+    
+    <http://d.opencalais.com/genericHasher-1/b0fd2e27-6d4d-3810-81ea-b2f9e9782964>     a <http://s.opencalais.com/1/type/em/r/PersonCareer>;
+         <http://s.opencalais.com/1/pred/careertype> "political";
+         <http://s.opencalais.com/1/pred/person> <http://d.opencalais.com/pershash-1/cfcf1aa2-de05-3939-a7d5-10c9c7b3e87b>;
+         <http://s.opencalais.com/1/pred/position> <http://d.opencalais.com/genericHasher-1/0d87e8a5-fb41-33c9-a1fb-bedf134b384e>;
+         <http://s.opencalais.com/1/pred/status> "current" .
+    
+    <http://d.opencalais.com/pershash-1/63b9ca66-bfdb-3533-9a19-8b1110336b5c>     a <http://s.opencalais.com/1/type/em/e/Person>;
+         <http://s.opencalais.com/1/pred/name> "George Bush";
+         <http://s.opencalais.com/1/pred/nationality> "N/A";
+         <http://s.opencalais.com/1/pred/persontype> "political" .
+    
+    <http://d.opencalais.com/pershash-1/cfcf1aa2-de05-3939-a7d5-10c9c7b3e87b>     a <http://s.opencalais.com/1/type/em/e/Person>;
+         <http://s.opencalais.com/1/pred/name> "Barack Obama";
+         <http://s.opencalais.com/1/pred/nationality> "N/A";
+         <http://s.opencalais.com/1/pred/persontype> "political" .
+    
+#ENDS

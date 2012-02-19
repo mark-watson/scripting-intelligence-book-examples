@@ -1,0 +1,21 @@
+# skip file:, ftp:, & mailto: urls
+-^(file|ftp|mailto):
+
+# skip image and other suffixes we can't yet parse
+-\.(js|gif|GIF|jpg|JPG|png|PNG|pdf|PDF|ico|ICO|css|sit|eps|wmf|zip|ppt|mpg|xls|gz|rpm|tgz|mov|MOV|exe|jpeg|JPEG|bmp|BMP)$
+
+# skip URLs containing certain characters as probable queries, etc.
+-[?*!@=]
+
+# skip URLs with slash-delimited segment that repeats 3+ times, to break loops
+-.*(/.+?)/.*?\1/.*?\1/
+
+# accept hosts in knowledgebooks.com
++^http://([a-z0-9]*\.)*knowledgebooks.com/
+
+# accept hosts in markwatson.com
++^http://([a-z0-9]*\.)*markwatson.com/
+
+# skip everything else
+-.
+

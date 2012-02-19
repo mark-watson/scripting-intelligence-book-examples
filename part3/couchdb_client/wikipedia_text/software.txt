@@ -1,0 +1,170 @@
+Software is a general term used to describe a collection of computer programs, procedures and documentation that perform some tasks on an operating system.
+
+The term includes:
+
+    * Application software such as word processors which perform productive tasks for users.
+    * Multimedia applications for playing multimedia.
+    * Firmware which is software programmed resident to electrically programmable memory devices on board mainboards or other types of integrated hardware carriers.
+    * Middleware which controls and co-ordinates distributed systems.
+
+Software includes websites, programs, video games etc. that are coded by programming languages like C, C++, etc.
+
+    * System software such as operating systems, which interface with hardware to provide the necessary services for application software.
+    * Testware which is an umbrella term or container term for all utilities and application software that serve in combination for testing a software package but not necessarily may optionally contribute to operational purposes. As such, testware is not a standing configuration but merely a working environment for application software or subsets thereof.
+
+"Software" is sometimes used in a broader context to mean anything which is not hardware but which is used with hardware, such as film, tapes and records.
+
+The term is now being used to include those that are non PC based like smartphones, palm OS, etc due to the proliferation of the mobile industry based on Symbian and Windows platforms.
+
+"Software" is sometimes used in a broader context to mean anything which is not hardware but which is used with hardware, such as film, tapes and records.
+
+
+Computer software
+From Wikipedia, the free encyclopedia
+  (Redirected from Computer Software)
+Jump to: navigation, search
+"Software" redirects here. For other uses, see Software (disambiguation).
+
+Computer software, or just software is a general term used to describe a collection of computer programs, procedures and documentation that perform some tasks on a computer system.[1]
+A screenshot of the OpenOffice.org Writer desktop software
+
+The term includes:
+
+    * Application software such as word processors which perform productive tasks for users.
+    * Firmware which is software programmed resident to electrically programmable memory devices on board mainboards or other types of integrated hardware carriers.
+    * Middleware which controls and co-ordinates distributed systems.
+
+Software includes websites, programs, video games etc. that are coded by programming languages like C, C++, etc.
+
+    * System software such as operating systems, which interface with hardware to provide the necessary services for application software.
+    * Testware which is an umbrella term or container term for all utilities and application software that serve in combination for testing a software package but not necessarily may optionally contribute to operational purposes. As such, testware is not a standing configuration but merely a working environment for application software or subsets thereof.
+
+"Software" is sometimes used in a broader context to mean anything which is not hardware but which is used with hardware, such as film, tapes and records.[2]
+Contents
+[hide]
+
+    * 1 Overview
+          o 1.1 Relationship to computer hardware
+    * 2 Types of software
+          o 2.1 System software
+          o 2.2 Programming software
+          o 2.3 Application software
+    * 3 Software topics
+          o 3.1 Architecture
+          o 3.2 Documentation
+          o 3.3 Library
+          o 3.4 Execution
+          o 3.5 Quality and reliability
+          o 3.6 License
+          o 3.7 Patents
+          o 3.8 Ethics and rights
+    * 4 Implementation
+    * 5 Software industry and organizations
+    * 6 See also
+    * 7 References
+
+Computer software is often regarded as anything but hardware, meaning that the "hard" are the parts that are tangible (able to hold) while the "soft" part is the intangible objects inside the computer. Software encompasses an extremely wide array of products and technologies developed using different techniques like programming languages, scripting languages etc. The types of software include web pages developed by technologies like HTML, PHP, Perl, JSP, ASP.NET, XML, and desktop applications like Microsoft Word, OpenOffice developed by technologies like C, C++, Java, C#, etc. Software usually runs on an underlying operating system (which is a software also) like Microsoft Windows, Linux (running GNOME and KDE), Sun Solaris etc. Software also includes video games like the Super Mario, Grand Theft Auto for personal computers or video game consoles.
+
+Also a software usually runs on a software platform which can either be provided by the operating system or by operating system independent platforms like Java and .NET. Software written for one platform is usually unable to run on other platforms so that for instance, Microsoft Windows software will not be able to run on Mac OS because of the differences relating to the platforms and their own standards. These applications can work using software porting, interpreters or re-writing the source code for the specific platform.
+
+Computer software is so called to distinguish it from computer hardware, which encompasses the physical interconnections and devices required to store and execute (or run) the software. At the lowest level, software consists of a machine language specific to an individual processor. A machine language consists of groups of binary values signifying processor instructions which change the state of the computer from its preceding state. Software is an ordered sequence of instructions for changing the state of the computer hardware in a particular sequence. It is usually written in high-level programming languages that are easier and more efficient for humans to use (closer to natural language) than machine language. High-level languages are compiled or interpreted into machine language object code. Software may also be written in an assembly language, essentially, a mnemonic representation of a machine language using a natural language alphabet. Assembly language must be assembled into object code via an assembler.
+
+The term "software" was first used in this sense by John W. Tukey in 1958.[3] In computer science and software engineering, computer software is all computer programs. The theory that is the basis for most modern software was first proposed by Alan Turing in his 1935 essay Computable numbers with an application to the Entscheidungsproblem.[4]
+
+A layer structure showing where Operating System is located on generally used software systems on desktops
+An example text editor, Vim
+Industrial Automation with robots engaged in vehicle assembly
+
+Practical computer systems divide software systems into three major classes: system software, programming software and application software, although the distinction is arbitrary, and often blurred.
+
+System software helps run the computer hardware and computer system. It includes:
+
+    * device drivers,
+    * diagnostic tools,
+    * operating systems,
+    * servers,
+    * utilities,
+    * windowing systems,
+
+The purpose of systems software is to insulate the applications programmer as much as possible from the details of the particular computer complex being used, especially memory and other hardware features, and such as accessory devices as communications, printers, readers, displays, keyboards, etc.
+
+Programming software usually provides tools to assist a programmer in writing computer programs, and software using different programming languages in a more convenient way. The tools include:
+
+    * compilers,
+    * debuggers,
+    * interpreters,
+    * linkers,
+    * text editors,
+
+An Integrated development environment (IDE) merges those tools into a software bundle, and a programmer may not need to type multiple commands for compiling, interpreting, debugging, tracing, etc., because the IDE usually has an advanced graphical user interface, or GUI.
+
+Application software allows end users to accomplish one or more specific (non-computer related) tasks. Typical applications include:
+
+    * industrial automation,
+    * business software,
+    * computer games,
+    * databases,
+    * educational software,
+    * medical software,
+
+Businesses are probably the biggest users of application software, but almost every field of human activity now uses some form of application software.
+
+    See also: Software architecture
+
+Users often see things differently than programmers. People who use modern general purpose computers (as opposed to embedded systems, analog computers, supercomputers, etc.) usually see three layers of software performing a variety of tasks: platform, application, and user software.
+
+    * Platform software: Platform includes the firmware, device drivers, an operating system, and typically a graphical user interface which, in total, allow a user to interact with the computer and its peripherals (associated equipment). Platform software often comes bundled with the computer. On a PC you will usually have the ability to change the platform software.
+    * Application software: Application software or Applications are what most people think of when they think of software. Typical examples include office suites and video games. Application software is often purchased separately from computer hardware. Sometimes applications are bundled with the computer, but that does not change the fact that they run as independent applications. Applications are almost always independent programs from the operating system, though they are often tailored for specific platforms. Most users think of compilers, databases, and other "system software" as applications.
+    * User-written software: End-user development tailors systems to meet users' specific needs. User software include spreadsheet templates, word processor macros, scientific simulations, and scripts for graphics and animations. Even email filters are a kind of user software. Users create this software themselves and often overlook how important it is. Depending on how competently the user-written software has been integrated into purchased application packages, many users may not be aware of the distinction between the purchased packages, and what has been added by fellow co-workers.
+
+
+
+    Main article: Software documentation
+
+Most commercial and large software have software documentation so that the end user can understand the program, what it does and how to use it. Without a clear documentation a software can be hard to use and especially if it is a very specialized and relatively complex software like the Photoshop, AutoCAD, etc.
+
+
+
+    Main article: Software library
+
+A program may not be sufficiently complete for execution by a computer. In particular, it may require additional software from a software library in order to be complete. Such a library may include software components used by stand-alone programs, but which cannot work on their own. Thus, programs may include standard routines that are common to many programs, extracted from these libraries. Libraries may also include 'stand-alone' programs which are activated by some computer event and/or perform some function (e.g., of computer 'housekeeping') but do not return data to their calling program. Libraries may be called by one to many other programs; programs may call zero to many other programs.
+
+    Main article: Execution (computing)
+
+Computer software has to be "loaded" into the computer's storage (such as a hard drive, memory, or RAM). Once the software has loaded, the computer is able to execute the software. This involves passing instructions from the application software, through the system software, to the hardware which ultimately receives the instruction as machine code. Each instruction causes the computer to carry out an operation -- moving data, carrying out a computation, or altering the control flow of instructions.
+
+Data movement is typically from one place in memory to another. Sometimes it involves moving data between memory and registers which enable high-speed data access in the CPU. Moving data, especially large amounts of it, can be costly. So, this is sometimes avoided by using "pointers" to data instead. Computations include simple operations such as incrementing the value of a variable data element. More complex computations may involve many operations and data elements together.
+
+    Main articles: Software quality, Software testing, and Software reliability
+
+Software quality is very important, especially for commercial and system software like Microsoft Office, Microsoft Windows, Linux, etc. If software is faulty (buggy), it can delete a person's work, crash the computer and do other unexpected things. Faults and errors are called "bugs". Many bugs are discovered and eliminated (debugged) through software testing. However, software testing rarely -- if ever -- eliminates every bug; some programmers say that "every program has at least one more bug" (Lubarsky's Law). All major software companies, such as Microsoft, Novell and Sun Microsystems, have their own software testing departments with the specific goal of just testing. Software can be tested through unit testing, regression testing and other methods, which are done manually, or most commonly, automatically, since the amount of code to be tested can be quite large. For instance, NASA has extremely rigorous software testing procedures for its Space Shuttle and other programs because faulty software can crash the whole program and make the vehicle not functional, at great expense.
+
+    Main article: Software license
+
+The software's license gives the user the right to use the software in the licensed environment. Some software comes with the license when purchased off the shelf, or an OEM license when bundled with hardware. Other software comes with a free software license, granting the recipient the rights to modify and redistribute the software. Software can also be in the form of freeware or shareware. See also License Management.
+
+    Main article: Software patent
+
+Software can be patented; however software patents can be controversial in the software industry with many people holding different views about it. Some believe that they hinder software development, while others argue that software patents provide an important incentive to spur software innovation. See software patent debate. The controversy over software patents is that a specific algorithm or technique that the software has cannot be duplicated by others and is considered an intellectual property and copyright infringement depending on the severity.
+
+    Main article: Computer ethics
+
+	This article may contain original research or unverified claims. Please improve the article by adding references. See the talk page for details. (July 2008)
+
+Many people have their own understanding about how software should be viewed. For instance, the free software or the open source community operates under the understanding that software freedom is essential. For instance, most of them believe that software should be sold for money[5], can be edited and copied without a high restriction and are commonly against software patents. Some of them don't like proprietary software like those from Microsoft and Apple Inc.. One of the advocates of such view is Richard Stallman for instance. Companies like Microsoft and Oracle sell their software to make money and to produce other software. In this case license plays a huge role in that the free software communities can use the General Public License (GPL) and Microsoft software like Microsoft Word are distributed under a very different license called the Microsoft End User Agreement (EULA).
+
+Being a new part of society, the idea of what rights users of software should have is not very developed. Some, such as the free software community, believe that software users should be free to modify and redistribute the software they use. They argue that these rights are necessary so that each individual can control their computer, and so that everyone can cooperate, if they choose, to work together as a community and control the direction that software progresses in. Others believe that software authors should have the power to say what rights the user will get.
+
+    Main articles: Software development, Computer programming, and Software engineering
+
+Software is usually created (coded, programmed) and designed in integrated development environments (IDE) like emacs, xemacs, Microsoft Visual Studio and Eclipse that can simplify the process and compile the program. As noted in different section, software is usually created on top of an existing software and the application programming interface (API) that the underlying software provides like GTK+, JavaBeans, Swing etc. Libraries (APIs) are categorized for different purposes. For instance JavaBeans library is used for designing enterprise applications, Windows Forms library is used for designing graphical user interface (GUI) applications like Microsoft Word and Windows Communication Foundation is used for designing web services. There are also underlying concepts in computer programming like quicksort, hashtable, array, binary tree that can be useful to creating a software. When a program is designed, it relies on the API. For instance, if a user is designing a Microsoft Windows desktop application, he/she might use the .NET Windows Forms library to design the desktop application and call its APIs like Form1.Close() and Form1.Show() to close or open the application and write the additional operations him/herself that it need to have. Without these APIs, the programmer needs to write these APIs him/herself. Companies like Sun Microsystems, Novell and Microsoft provide their own APIs so that many applications are written using their software libraries that usually have numerous APIs in them.
+
+Software has special economic characteristics that make its design, creation, and distribution different from most other economic goods.[6][7]
+
+    Main article: Software industry
+
+There are many software companies in the world and selling software can be quite profitable industry. For instance, Bill Gates, the founder of Microsoft is the second richest man in the world in 2008 largely by selling the Microsoft Windows and Microsoft Office software programs, and same goes for Larry Ellison largely through his Oracle database software.
+
+There are many non-profit software organizations like the Free Software Foundation, GNU Project, Mozilla Foundation. Also there are many software standards organizations like the W3C and others that try to come up with a software standard so that many software can work and interoperate with each other like through standards such as XML, HTML, HTTP, FTP, etc.
+
+Some large software companies include Microsoft, IBM, Oracle, SAP and HP.[8]

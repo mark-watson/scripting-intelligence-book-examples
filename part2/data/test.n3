@@ -1,0 +1,76 @@
+@prefix sw: <http://nadeen.edu/sw#> .
+@prefix example: <http://nadeen.edu/example#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sw:Color rdfs:type rdfs:Class;
+      rdfs:label "The color of some thing".
+
+sw:red rdfs:type sw:Color;
+     rdfs:label "red" .
+sw:white rdfs:type sw:Color;
+     rdfs:label "white" .
+sw:blue rdfs:type sw:Color;
+     rdfs:label "blue" .
+
+sw:color rdfs:type rdfs:ObjectProperty;
+   rdfs:domain rdfs:Class;
+   rdfs:range sw:Color .
+
+sw:size2d rdfs:type rdfs:ObjectProperty;
+   rdfs:domain rdfs:Class;
+   rdfs:range xsd:stringstring .
+
+sw:Product rdfs:type rdfs:Class;
+         rdfs:label "Super class for any product" .
+
+sw:Stationary rdfs:type rdfs:Class;
+         rdfs:subClassOf sw:Product;
+         rdfs:label "A product made of paper" .
+
+sw:Paper rdfs:type sw:Stationary;
+         rdfs:label "A product made of paper" .
+
+sw:Notebook rdfs:type sw:Stationary;
+         rdfs:label "A product that is any type of notebook" .
+
+sw:CompositionNotebook rdfs:type sw:Notebook;
+        rdfs:label "A product that is a composition notebook" .
+
+sw:WireBoundNotebook rdfs:type sw:Notebook;
+        rdfs:label "A product that is a wire bound notebook" .
+
+example:book01 rdfs:type sw:CompositionNotebook;
+               rdfs:type sw:WireBoundNotebook;
+   	           rdfs:label "A wire bound composition notebook";
+               sw:color sw:blue;
+               sw:size2d "7x9" .
+
+example:book02 rdfs:type sw:Book;
+               rdfs:label "Programming in Java";
+               sw:color sw:blue;
+               sw:size2d "7x9" .
+
+example:paper07 rdfs:type sw:Paper;
+                sw:color sw:white;
+                sw:size2d "8x11" .
+  
+sw:Book rdfs:type sw:Stationary;
+         rdfs:label "A product that is any type of book" .
+
+sw:Publisher rdfs:type rdfs:Class;
+         rdfs:label "Book publisher" .
+
+sw:publishedBy rdfs:type rdfs:ObjectProperty;
+   rdfs:domain sw:Book;
+   rdfs:range sw:Publisher .
+
+example:mcgrawhill rdfs:type sw:Publisher;
+   rdfs:label "McGraw Hill Publishers" .
+
+example:book01 sw:publishedBy example:mcgrawhill.
+
+
+
+
+

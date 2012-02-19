@@ -1,0 +1,233 @@
+@prefix kb: <http://knowledgebooks.com/test#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+kb:Recipe a rdfs:Class;
+     rdfs:label "Recipe".
+
+kb:similarRecipeName a rdf:Property ;
+     rdfs:domain kb:Recipe;
+     rdfs:range kb:Recipe .
+
+kb:similarRecipeIngredients a rdf:Property ;
+     rdfs:domain kb:Recipe;
+     rdfs:range kb:Recipe .
+
+kb:recipeName a rdf:Property;
+     rdfs:domain kb:Recipe;
+     rdfs:range <http://www.w3.org/2001/XMLSchema#stringstring> .
+     
+<http://cjskitchen.com/printpage.jsp?recipe_id=1699880> 
+  a kb:Recipe ;
+  kb:recipeName "Apple-Cranberry Chutney" .
+<http://cjskitchen.com/printpage.jsp?recipe_id=13019321> 
+  a kb:Recipe ;
+  kb:recipeName "Arroz con Pollo" .
+<http://cjskitchen.com/printpage.jsp?recipe_id=13019321>  kb:similarRecipeName <http://cookingspace.com/site/show_recipe/5>  .
+<http://cookingspace.com/site/show_recipe/5>  kb:similarRecipeName <http://cjskitchen.com/printpage.jsp?recipe_id=13019321>  .
+<http://cjskitchen.com/printpage.jsp?recipe_id=1360065> 
+  a kb:Recipe ;
+  kb:recipeName "Asian Chicken Rice" .
+<http://cjskitchen.com/printpage.jsp?recipe_id=8625327> 
+  a kb:Recipe ;
+  kb:recipeName "Barbecued Cornish Game Hens" .
+<http://cjskitchen.com/printpage.jsp?recipe_id=8625327>  kb:similarRecipeName <http://cookingspace.com/site/show_recipe/3>  .
+<http://cookingspace.com/site/show_recipe/3>  kb:similarRecipeName <http://cjskitchen.com/printpage.jsp?recipe_id=8625327>  .
+<http://cjskitchen.com/printpage.jsp?recipe_id=1360333> 
+  a kb:Recipe ;
+  kb:recipeName "Barbequed Beef Ribs" .
+<http://cjskitchen.com/printpage.jsp?recipe_id=1360333>  kb:similarRecipeName <http://cjskitchen.com/printpage.jsp?recipe_id=1360505>  .
+<http://cjskitchen.com/printpage.jsp?recipe_id=1360505>  kb:similarRecipeName <http://cjskitchen.com/printpage.jsp?recipe_id=1360333>  .
+<http://cjskitchen.com/printpage.jsp?recipe_id=1360505> 
+  a kb:Recipe ;
+  kb:recipeName "Barbequed Pork Ribs" .
+<http://cjskitchen.com/printpage.jsp?recipe_id=3518015> 
+  a kb:Recipe ;
+  kb:recipeName "Bread Pudding" .
+<http://cjskitchen.com/printpage.jsp?recipe_id=3518015>  kb:similarRecipeName <http://cookingspace.com/site/show_recipe/35>  .
+<http://cookingspace.com/site/show_recipe/35>  kb:similarRecipeName <http://cjskitchen.com/printpage.jsp?recipe_id=3518015>  .
+<http://cjskitchen.com/printpage.jsp?recipe_id=1360759> 
+  a kb:Recipe ;
+  kb:recipeName "Brown Rice Salad" .
+<http://cjskitchen.com/printpage.jsp?recipe_id=1360759>  kb:similarRecipeName <http://cookingspace.com/site/show_recipe/26>  .
+<http://cookingspace.com/site/show_recipe/26>  kb:similarRecipeName <http://cjskitchen.com/printpage.jsp?recipe_id=1360759>  .
+<http://cjskitchen.com/printpage.jsp?recipe_id=1805605> 
+  a kb:Recipe ;
+  kb:recipeName "Caponata ~ Eggplant Relish" .
+<http://cjskitchen.com/printpage.jsp?recipe_id=2488285> 
+  a kb:Recipe ;
+  kb:recipeName "Cheryl's Marjoram Chicken and Creamy Yogurt Sauce" .
+<http://cjskitchen.com/printpage.jsp?recipe_id=1723188> 
+  a kb:Recipe ;
+  kb:recipeName "Chicken With Mustard-Honey Glaze" .
+<http://cjskitchen.com/printpage.jsp?recipe_id=1876053> 
+  a kb:Recipe ;
+  kb:recipeName "Cranberry Chicken" .
+<http://cjskitchen.com/printpage.jsp?recipe_id=3435721> 
+  a kb:Recipe ;
+  kb:recipeName "Curried Chicken Salad" .
+<http://cjskitchen.com/printpage.jsp?recipe_id=3435721>  kb:similarRecipeName <http://cookingspace.com/site/show_recipe/2>  .
+<http://cookingspace.com/site/show_recipe/2>  kb:similarRecipeName <http://cjskitchen.com/printpage.jsp?recipe_id=3435721>  .
+<http://cjskitchen.com/printpage.jsp?recipe_id=1364711> 
+  a kb:Recipe ;
+  kb:recipeName "Fresh Basil Salad" .
+<http://cjskitchen.com/printpage.jsp?recipe_id=13030356> 
+  a kb:Recipe ;
+  kb:recipeName "Gazpacho" .
+<http://cjskitchen.com/printpage.jsp?recipe_id=13030356>  kb:similarRecipeName <http://cookingspace.com/site/show_recipe/1>  .
+<http://cookingspace.com/site/show_recipe/1>  kb:similarRecipeName <http://cjskitchen.com/printpage.jsp?recipe_id=13030356>  .
+<http://cjskitchen.com/printpage.jsp?recipe_id=1804194> 
+  a kb:Recipe ;
+  kb:recipeName "Guacamole" .
+<http://cjskitchen.com/printpage.jsp?recipe_id=1804194>  kb:similarRecipeIngredients <http://cjskitchen.com/printpage.jsp?recipe_id=5078181>  .
+<http://cjskitchen.com/printpage.jsp?recipe_id=5078181>  kb:similarRecipeIngredients <http://cjskitchen.com/printpage.jsp?recipe_id=1804194>  .
+<http://cjskitchen.com/printpage.jsp?recipe_id=5078181> 
+  a kb:Recipe ;
+  kb:recipeName "Mark's Baked Lamb Shanks" .
+<http://cjskitchen.com/printpage.jsp?recipe_id=5078181>  kb:similarRecipeName <http://cookingspace.com/site/show_recipe/25>  .
+<http://cookingspace.com/site/show_recipe/25>  kb:similarRecipeName <http://cjskitchen.com/printpage.jsp?recipe_id=5078181>  .
+<http://cjskitchen.com/printpage.jsp?recipe_id=1364808> 
+  a kb:Recipe ;
+  kb:recipeName "Mushroom Barley Stew" .
+<http://cjskitchen.com/printpage.jsp?recipe_id=3522414> 
+  a kb:Recipe ;
+  kb:recipeName "Orange Almond Glaze" .
+<http://cjskitchen.com/printpage.jsp?recipe_id=3522414>  kb:similarRecipeIngredients <http://cjskitchen.com/printpage.jsp?recipe_id=2326700>  .
+<http://cjskitchen.com/printpage.jsp?recipe_id=2326700>  kb:similarRecipeIngredients <http://cjskitchen.com/printpage.jsp?recipe_id=3522414>  .
+<http://cjskitchen.com/printpage.jsp?recipe_id=2326700> 
+  a kb:Recipe ;
+  kb:recipeName "Poached Pears with Raspberry Wine Sauce" .
+<http://cjskitchen.com/printpage.jsp?recipe_id=3521133> 
+  a kb:Recipe ;
+  kb:recipeName "Poppy Seed Cake" .
+<http://cjskitchen.com/printpage.jsp?recipe_id=3358053> 
+  a kb:Recipe ;
+  kb:recipeName "Rosemary's Nopalitos Salad" .
+<http://cjskitchen.com/printpage.jsp?recipe_id=1375788> 
+  a kb:Recipe ;
+  kb:recipeName "Salmon Rice" .
+<http://cjskitchen.com/printpage.jsp?recipe_id=1375788>  kb:similarRecipeName <http://cookingspace.com/site/show_recipe/6>  .
+<http://cookingspace.com/site/show_recipe/6>  kb:similarRecipeName <http://cjskitchen.com/printpage.jsp?recipe_id=1375788>  .
+<http://cjskitchen.com/printpage.jsp?recipe_id=5174756> 
+  a kb:Recipe ;
+  kb:recipeName "Salmon with Capers and Lemon" .
+<http://cjskitchen.com/printpage.jsp?recipe_id=1628186> 
+  a kb:Recipe ;
+  kb:recipeName "Salsa Your Way" .
+<http://cjskitchen.com/printpage.jsp?recipe_id=3523281> 
+  a kb:Recipe ;
+  kb:recipeName "Sedona Green Chile Chicken Stew" .
+<http://cjskitchen.com/printpage.jsp?recipe_id=1376078> 
+  a kb:Recipe ;
+  kb:recipeName "SouthWest Beans" .
+<http://cjskitchen.com/printpage.jsp?recipe_id=1376078>  kb:similarRecipeName <http://cookingspace.com/site/show_recipe/7>  .
+<http://cookingspace.com/site/show_recipe/7>  kb:similarRecipeName <http://cjskitchen.com/printpage.jsp?recipe_id=1376078>  .
+<http://cjskitchen.com/printpage.jsp?recipe_id=1877706> 
+  a kb:Recipe ;
+  kb:recipeName "Spinach Dip" .
+<http://cjskitchen.com/printpage.jsp?recipe_id=2328877> 
+  a kb:Recipe ;
+  kb:recipeName "Sushi: Smoked Salmon Roll with Avocado" .
+<http://cjskitchen.com/printpage.jsp?recipe_id=3438777> 
+  a kb:Recipe ;
+  kb:recipeName "Sushi: sweet potato desert sushi" .
+<http://cjskitchen.com/printpage.jsp?recipe_id=3439685> 
+  a kb:Recipe ;
+  kb:recipeName "Tabouleh" .
+<http://cookingspace.com/site/show_recipe/24> 
+  a kb:Recipe ;
+  kb:recipeName "Non-fat Yogurt with fruit" .
+<http://cookingspace.com/site/show_recipe/31> 
+  a kb:Recipe ;
+  kb:recipeName "Blueberry Pie" .
+<http://cookingspace.com/site/show_recipe/22> 
+  a kb:Recipe ;
+  kb:recipeName "Taco flavored tortilla chips" .
+<http://cookingspace.com/site/show_recipe/2> 
+  a kb:Recipe ;
+  kb:recipeName "Curried Chicken Salad" .
+<http://cookingspace.com/site/show_recipe/37> 
+  a kb:Recipe ;
+  kb:recipeName "Salmon and Scallions Soup" .
+<http://cookingspace.com/site/show_recipe/38> 
+  a kb:Recipe ;
+  kb:recipeName "Pasta Salad with Tuna, Corn, and Peas" .
+<http://cookingspace.com/site/show_recipe/15> 
+  a kb:Recipe ;
+  kb:recipeName "Blueberry Pop Tart" .
+<http://cookingspace.com/site/show_recipe/35> 
+  a kb:Recipe ;
+  kb:recipeName "Bread Pudding" .
+<http://cookingspace.com/site/show_recipe/26> 
+  a kb:Recipe ;
+  kb:recipeName "Brown rice" .
+<http://cookingspace.com/site/show_recipe/6> 
+  a kb:Recipe ;
+  kb:recipeName "Salmon Rice" .
+<http://cookingspace.com/site/show_recipe/9> 
+  a kb:Recipe ;
+  kb:recipeName "Baked French Fries" .
+<http://cookingspace.com/site/show_recipe/7> 
+  a kb:Recipe ;
+  kb:recipeName "SouthWest Beans" .
+<http://cookingspace.com/site/show_recipe/11> 
+  a kb:Recipe ;
+  kb:recipeName "Peanut butter toast" .
+<http://cookingspace.com/site/show_recipe/5> 
+  a kb:Recipe ;
+  kb:recipeName "Arroz con Pollo" .
+<http://cookingspace.com/site/show_recipe/1> 
+  a kb:Recipe ;
+  kb:recipeName "Gazpacho" .
+<http://cookingspace.com/site/show_recipe/39> 
+  a kb:Recipe ;
+  kb:recipeName "Grilled Cheddar Cheese Sandwich" .
+<http://cookingspace.com/site/show_recipe/13> 
+  a kb:Recipe ;
+  kb:recipeName "Fresh apple desert" .
+<http://cookingspace.com/site/show_recipe/18> 
+  a kb:Recipe ;
+  kb:recipeName "Camembert cheese and crackers" .
+<http://cookingspace.com/site/show_recipe/14> 
+  a kb:Recipe ;
+  kb:recipeName "Cheese Piza" .
+<http://cookingspace.com/site/show_recipe/16> 
+  a kb:Recipe ;
+  kb:recipeName "Corn on the cob with butter, salt, and pepper" .
+<http://cookingspace.com/site/show_recipe/16>  kb:similarRecipeName <http://cookingspace.com/site/show_recipe/17>  .
+<http://cookingspace.com/site/show_recipe/17>  kb:similarRecipeName <http://cookingspace.com/site/show_recipe/16>  .
+<http://cookingspace.com/site/show_recipe/19> 
+  a kb:Recipe ;
+  kb:recipeName "Marie Callender's Beef Stroganoff &amp; Noodles, Carrots, Peas frozen dinner" .
+<http://cookingspace.com/site/show_recipe/36> 
+  a kb:Recipe ;
+  kb:recipeName "Cheese quesadilla" .
+<http://cookingspace.com/site/show_recipe/23> 
+  a kb:Recipe ;
+  kb:recipeName "Cheddar Cheese Nachos" .
+<http://cookingspace.com/site/show_recipe/20> 
+  a kb:Recipe ;
+  kb:recipeName "Kraft Macaroni &amp; Cheese Dinner" .
+<http://cookingspace.com/site/show_recipe/27> 
+  a kb:Recipe ;
+  kb:recipeName "White rice" .
+<http://cookingspace.com/site/show_recipe/21> 
+  a kb:Recipe ;
+  kb:recipeName "Bean and Cheese Burrito (frozen)" .
+<http://cookingspace.com/site/show_recipe/17> 
+  a kb:Recipe ;
+  kb:recipeName "Corn on the cob with black pepper" .
+<http://cookingspace.com/site/show_recipe/30> 
+  a kb:Recipe ;
+  kb:recipeName "Baked potato" .
+<http://cookingspace.com/site/show_recipe/30>  kb:similarRecipeName <http://cookingspace.com/site/show_recipe/29>  .
+<http://cookingspace.com/site/show_recipe/29>  kb:similarRecipeName <http://cookingspace.com/site/show_recipe/30>  .
+<http://cookingspace.com/site/show_recipe/29> 
+  a kb:Recipe ;
+  kb:recipeName "Bake potato - plain" .
+<http://cookingspace.com/site/show_recipe/3> 
+  a kb:Recipe ;
+  kb:recipeName "Barbecued Cornish Game Hens" .
+<http://cookingspace.com/site/show_recipe/25> 
+  a kb:Recipe ;
+  kb:recipeName "Mark's Baked Lamb Shanks" .

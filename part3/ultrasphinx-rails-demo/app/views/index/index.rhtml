@@ -1,0 +1,25 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+       "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+  <title>Sphinx/UltraSphinx Search Demo</title>
+</head>
+
+<body>
+  <image style="float:right; padding:4px;" src="images/Sphinx.jpg" alt="image of Sphinx in Egypt" />
+
+  <h2>Sphinx/UltraSphinx Search Demo</h2>
+  <p>Enter Search request:</p>
+  <form action="/" method="get">
+    <input type="text" size="30" name="search_text" value="<%=@query%>"/> <input type="submit" value="Search"/>
+  </form>
+
+  <% @results.each {|result| %>
+	<p>Matching title: <%= result.title %></p>
+  <% } %>
+
+</body>
+</html>

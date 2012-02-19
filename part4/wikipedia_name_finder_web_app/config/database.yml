@@ -1,0 +1,14 @@
+development:
+  adapter: mysql
+  database: wikipedia_name_links_development
+  username: root
+
+production:
+  adapter: mysql
+  database: wikipedia_name_links_production
+  username: root
+
+test:
+  adapter: mysql
+  database: wikipedia_name_links_test
+  username: root

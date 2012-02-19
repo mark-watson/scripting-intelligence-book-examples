@@ -1,0 +1,2 @@
+module MashupHelper
+end

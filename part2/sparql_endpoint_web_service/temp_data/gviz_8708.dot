@@ -1,0 +1,6 @@
+digraph G {
+	graph [rankdir=LR];
+	node [label="\N", shape=ellipse];
+	edge [arrowhead=normal];
+	graph [bb="0,0,0,0"];
+}

@@ -1,0 +1,14 @@
+development:
+  adapter: mysql
+  database: interesting_things_development
+  username: root
+
+test:
+  adapter: mysql
+  database: interesting_things_test
+  username: root
+
+production:
+  adapter: mysql
+  database: interesting_things_production
+  username: root

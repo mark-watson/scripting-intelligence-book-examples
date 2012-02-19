@@ -1,0 +1,16 @@
+<html>
+  <head>
+    <title>Twitter and Google Map Mashup</title>
+    <%= GMap.header %>
+    <%= @map.to_html %>
+  </head>
+  <body>
+    <h3>Map for:</h3><p><strong><%= @chosen_hit.join(' : ') %></strong></p>
+    <%= @map.div(:width => 300, :height => 200) %>
+    <h3>Status of Twitter Friends</h3>
+    <% @all_hits.each {|hit| %>
+        <p><%= hit.join(': ') %></p>
+    <% } %>
+  </body>
+</html>
+

@@ -1,0 +1,336 @@
+--
+-- PostgreSQL database dump
+--
+
+SET client_encoding = 'UTF8';
+SET standard_conforming_strings = off;
+SET check_function_bodies = false;
+SET client_min_messages = warning;
+SET escape_string_warning = off;
+
+--
+-- Name: plpgsql; Type: PROCEDURAL LANGUAGE; Schema: -; Owner: postgres
+--
+
+CREATE PROCEDURAL LANGUAGE plpgsql;
+
+
+ALTER PROCEDURAL LANGUAGE plpgsql OWNER TO postgres;
+
+SET search_path = public, pg_catalog;
+
+SET default_tablespace = '';
+
+SET default_with_oids = false;
+
+--
+-- Name: scraped_recipe_ingredients; Type: TABLE; Schema: public; Owner: postgres; Tablespace: 
+--
+
+CREATE TABLE scraped_recipe_ingredients (
+    id integer NOT NULL,
+    description character varying(255),
+    amount character varying(255),
+    scraped_recipe_id integer
+);
+
+
+ALTER TABLE public.scraped_recipe_ingredients OWNER TO postgres;
+
+--
+-- Name: scraped_recipe_ingredients_id_seq; Type: SEQUENCE; Schema: public; Owner: postgres
+--
+
+CREATE SEQUENCE scraped_recipe_ingredients_id_seq
+    INCREMENT BY 1
+    NO MAXVALUE
+    NO MINVALUE
+    CACHE 1;
+
+
+ALTER TABLE public.scraped_recipe_ingredients_id_seq OWNER TO postgres;
+
+--
+-- Name: scraped_recipe_ingredients_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
+--
+
+ALTER SEQUENCE scraped_recipe_ingredients_id_seq OWNED BY scraped_recipe_ingredients.id;
+
+
+--
+-- Name: scraped_recipe_ingredients_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
+--
+
+SELECT pg_catalog.setval('scraped_recipe_ingredients_id_seq', 136, true);
+
+
+--
+-- Name: scraped_recipes; Type: TABLE; Schema: public; Owner: postgres; Tablespace: 
+--
+
+CREATE TABLE scraped_recipes (
+    id integer NOT NULL,
+    base_url character varying(255),
+    recipe_id integer,
+    recipe_name character varying(255),
+    directions text
+);
+
+
+ALTER TABLE public.scraped_recipes OWNER TO postgres;
+
+--
+-- Name: scraped_recipes_id_seq; Type: SEQUENCE; Schema: public; Owner: postgres
+--
+
+CREATE SEQUENCE scraped_recipes_id_seq
+    INCREMENT BY 1
+    NO MAXVALUE
+    NO MINVALUE
+    CACHE 1;
+
+
+ALTER TABLE public.scraped_recipes_id_seq OWNER TO postgres;
+
+--
+-- Name: scraped_recipes_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
+--
+
+ALTER SEQUENCE scraped_recipes_id_seq OWNED BY scraped_recipes.id;
+
+
+--
+-- Name: scraped_recipes_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
+--
+
+SELECT pg_catalog.setval('scraped_recipes_id_seq', 32, true);
+
+
+--
+-- Name: id; Type: DEFAULT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE scraped_recipe_ingredients ALTER COLUMN id SET DEFAULT nextval('scraped_recipe_ingredients_id_seq'::regclass);
+
+
+--
+-- Name: id; Type: DEFAULT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE scraped_recipes ALTER COLUMN id SET DEFAULT nextval('scraped_recipes_id_seq'::regclass);
+
+
+--
+-- Data for Name: scraped_recipe_ingredients; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY scraped_recipe_ingredients (id, description, amount, scraped_recipe_id) FROM stdin;
+1	salt	1/10 teaspoons	10
+2	boiled eggs	2  large	10
+3	black pepper	1/3 teaspoons	10
+4	toasted bread	2  slice small	10
+5	mayonnaise	1 2/3 tablespoons	10
+6	shredded iceberg lettuce	1/4 cup shredded	10
+7	cooked brown rice	2  cup	26
+8	soy sauce	2  tablespoons	26
+9	apple	2/3 cup quartered or chopped	12
+10	Kellogg's Blueberry Pop Tart	1  pastry	15
+11	frozen dinner	1  meal	19
+12	butter	1  tablespoons	39
+13	French bread	2  slice small	39
+14	cheddar cheese	1/8 cup diced	39
+15	salt	1 1/2 teaspoons	3
+16	black pepper	1 1/2 teaspoons	3
+17	dried basil	3  tsp leaves	3
+18	Cornish Game Hens	4  bird whole	3
+19	salt	1/4 teaspoons	38
+20	raw fresh white onion	1/3 cup chopped	38
+21	frozen corn	1/4 (0.5) cup	38
+22	olive oil	1  tablespoons	38
+23	black pepper	1/5 teaspoons	38
+24	dry pasta (any type)	1  cup	38
+25	frozen peas	1/4 (0.5) cup	38
+26	canned tuna (in water, not oil), drained	1/2 cup solid or chunks	38
+27	mayonnaise	2  tablespoons	38
+28	olive oil	1 1/2 teaspoons	9
+29	Frozen French Fries	10  (10) strip	9
+30	black pepper	1/3 teaspoons	17
+31	Corn	1  ear small ( 5-1/2	17
+32	salt	1  teaspoons	7
+33	chopped fresh onion	1  cup chopped	7
+34	kidney beans	1/2 cup	7
+35	adzuki beans	1/2 cup	7
+36	dried bay leaf	1/2 tbsp crumbled	7
+37	dried oregano	2  tsp leaves	7
+38	chili powder	1 1/2 tablespoons	7
+39	fresh garlic	1 1/5 tablespoons	7
+40	black pepper	1  tablespoons	7
+41	cummin seeds	1/2 tbsp whole	7
+42	black beans	1  cup	7
+43	pinto beans	1/2 cup	7
+44	T-Bone steak	1  piece cooked excluding refuse ( yield from 1 lb raw meat with refuse)	8
+45	barbecue sauce	1  serving 2 tbsp	8
+46	sesame oil	2  tablespoons	6
+47	pine nuts	1/3 cup	6
+48	brown rice	1  cup	6
+49	salmon fillet (skin removed)	12  oz boneless	6
+50	broccoli	2  cup chopped	6
+51	canned chicken broth	2  cup	6
+52	apple	2/3 cup quartered or chopped	13
+53	peanut butter	2  tablespoons	11
+54	toasted sourdough french bread	1  slice small	11
+55	raw potato	1  potato large	29
+56	Taco flavored tortilla chips	2  oz	22
+57	water	16  fl oz	5
+58	Chicken (fryer)	1  unit ( yield from 1 lb ready-to-cook chicken)	5
+59	onion, peeled and chopped	1/2 cup chopped	5
+60	green pepper (seeded and chopped in strips)	1/2 cup strips	5
+61	frozen peas	1/2 (0.5) cup	5
+62	canned chicken broth	1  cup	5
+63	white rice	1  cup	5
+64	tumeric	1/3 teaspoons	5
+65	vegetable oil	1/3 cup	5
+66	1 slice of bread	1  oz	34
+67	butter	1  teaspoons	34
+68	eggs	2  large	34
+69	bacon	2  slice cooked	34
+70	Taco flavored tortilla chips	8  oz	23
+71	fresh onion	1/4 cup chopped	23
+72	Fresh red tomatoes	1  cup	23
+73	Tabasco Sauce	1  tsp	23
+74	Cheddar Cheese	1  cup diced	23
+75	Pizza Hut regular crust cheese piza	1  slice	14
+76	salt	2  teaspoons	1
+77	olive oil	5  tablespoons	1
+78	chives	1  tbsp chopped	1
+79	tomatoes	2  cup chopped	1
+80	water	12  fl oz	1
+81	paprika	2  teaspoons	1
+82	black pepper	1/3 teaspoons	1
+83	sweet green pepper	1  cup chopped	1
+84	crushed fresh garlic	1 1/2 tablespoons	1
+85	cucumber	1  cup pared chopped	1
+86	Worcestershire Sauce	1 1/5 tablespoons	1
+87	peeled and chopped onions	2  onion	1
+88	red wine vinegar	1/3 cup	1
+89	salt	1/10 teaspoons	33
+90	pealed raw cucumber	1/8 cup pared chopped	33
+91	olive oil	1  tablespoons	33
+92	black pepper	1/4 teaspoons	33
+93	green leaf lettuce	1/2 cup shredded	33
+94	red wine or balsamic vinegar	1 1/10 tablespoons	33
+95	sweet (purple) raw onion	1/8 onion	33
+96	raw carrot	1/4 cup chopped	33
+97	Kraft Dinner	1  NLEA Serving ( makes about 1 cup prepared)	20
+98	celery	1/2 cup chopped	2
+99	olive oil	1  tablespoons	2
+100	tart apples with skin	1  cup slices	2
+101	whole chicken breast	1  unit ( yield from 1 lb ready-to-cook chicken)	2
+102	cumin seeds	2/3 tbsp whole	2
+103	white pepper	1/5 tbsp ground	2
+104	fresh peaches	1 1/2 cup slices	2
+105	low fat plain yogurt	3/4 cup ( 8 fl oz)	2
+106	cashews	8  oz	2
+107	curry powder	6 2/3 tablespoons	2
+108	salt	1/5 teaspoons	16
+109	black pepper	1/5 teaspoons	16
+110	butter (with salt)	1 1/3 teaspoons	16
+111	Corn	1  ear small ( 5-1/2	16
+112	raw egg yolks	1/4 cup	35
+113	raisins	1/4 cup packed	35
+114	ground cinnamon	1/2 teaspoons	35
+115	lemon peel	1/2 teaspoons	35
+116	baking soda	1/8 tsp	35
+117	orange peel	1/2 teaspoons	35
+118	maple syrup	1/2 cup	35
+119	bread	4  slice small	35
+120	ground nutmeg	1/2 teaspoons	35
+121	low fat milk	2  cup	35
+122	vanilla extract	1 1/2 teaspoons	35
+123	1/2 cup orange sherbet	1/2 (0.5) cup ( 4 fl oz)	32
+124	1 slice	4  oz	31
+125	cooked white rice	2  cup	27
+126	large olives	4  jumbo	36
+127	8 inch diameter flour tortilla	2  serving	36
+128	Diced fresh red tomato	1/4 cup	36
+129	Olive oil	1  tablespoons	36
+130	Cheddar cheese	1/8 cup diced	36
+131	salt	1/3 teaspoons	37
+132	olive oil	2  tablespoons	37
+133	black pepper	1/3 teaspoons	37
+134	fresh scallions (green onions)	1  cup chopped	37
+135	Salmon	1  fillet	37
+136	low fat milk	2  cup	37
+\.
+
+
+--
+-- Data for Name: scraped_recipes; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY scraped_recipes (id, base_url, recipe_id, recipe_name, directions) FROM stdin;
+1	http://cookingspace.com	10	Egg Salad Sandwich	Peel boiled eggs, mash, and mix with mayonnaise.  Add salt and pepper to taste.  Serve with shredded lettuce on toast.
+2	http://cookingspace.com	26	Brown rice	Cook rice as per directions. If you buy your brown rice in bulk at a health food store (a good idea!) add 1 part rice to 2 parts water and cook in either a rice cooker or a pan with a tightly fitting top - do not lift the lid while rice is cooking.  If you are not on a low sodium diet, add soy sauce to taste.
+3	http://cookingspace.com	12	Apple	Eat as is.
+4	http://cookingspace.com	15	Blueberry Pop Tart	Toast and eat as-is.
+5	http://cookingspace.com	19	Marie Callender's Beef Stroganoff &amp; Noodles, Carrots, Peas frozen dinner	Cook as per directions.
+6	http://cookingspace.com	39	Grilled Cheddar Cheese Sandwich	Melt butter in a skillet and brown one side of both pieces of bread.  Turn over one slice, add cheese and cover with other slice of bread.  Turn after the bottom is browned and serve when the other side is done.
+7	http://cookingspace.com	3	Barbecued Cornish Game Hens	Wash the Cornish Game Hens and with a large knife cut them each in two pieces (each piece has one leg, one wing, half a breast, and half a back). Trim the excess skin and fat from the cut edges, wash the hens in cold water and place in a large covered baking dish. Add the salt, pepper, and dried basil to the baking dish and rub the ingredients over the hens. Wash your hands with plenty of soap (because you just handled raw poultry), cover the baking dish, and cook in a 350 degree oven for about 30 minutes.  Start the coals on your barbecue. Take the hens from the oven baking dish and place back side down over the hot coals. Cook for about 10 minutes and then turn over and cook for an additional 10 minutes. It might be necessary to move the hens if the burning charcoal flares up (if you did cut away some excess skin and fat this is likely to not happen).  Cooking time may vary depending on how hot the coals are.  Cut into the hens with a small sharp knife to make sure that they are done before serving.  Optional:we sometimes spread a little teriyaki or barbeque sauce on the hens while cooking on the barbeque. They do also taste great with just the basil, salt, and pepper.  Serving size:a whole Cornish Game Hen makes a large serving for one person. We usually serve a whole hen per person only if we are just having a salad with the hen. If you have a few side dishes, then half a Cornish Game Hen makes a good serving.
+8	http://cookingspace.com	38	Pasta Salad with Tuna, Corn, and Peas	This can be a complete "one dish meal":  Cook pasta according to directions, drain, and cool.  Cook corn and peas according to package directions, rinse, and cool.  Finely chop white onion.  Mix all ingredients and place in refrigerator for at least 15 minutes to cool.
+9	http://cookingspace.com	9	Baked French Fries	Each serving is 10 French Fries (strips).  Brush frozen fries with olive oil.  Bake in a hot oven as per directions.
+10	http://cookingspace.com	17	Corn on the cob with black pepper	Boil or steam corn - cook to desired tenderness.  To reduce sodium, do not use butter (usually contains salt) or add extra salt.  Add pepper to taste.
+11	http://cookingspace.com	7	SouthWest Beans	Inspect the beans making sure there are no small stones. Rinse.  Wash the beans and soak overnight (up to 24 hours is OK). If you do not have time to presoak the beans, boil for 5 minutes and turn off heat for about one hour.  Drain and wash beans and then add to a large soup pot with 5 to 6 cups of water. (You might have to add additional water later). Cover, and cook at a slow boil for one hour.  Add all remaining ingredients (but no salt, this makes them tough during cooking). The onion should be finely choped. Cook covered for another hour. Note: if there is too much water in the beans, you can cook them uncovered until the liquid is reduced.  Add salt before serving. Adding salt earlier makes the beans tough.  Garnish with fresh cilantro if available.
+12	http://cookingspace.com	8	Barbecued T-Bone Steak	Trim excess loose fat from steak.  Barbecue over hot coals and add barbecue sauce to taste.  Remember to wash your hands after handling raw meat!
+13	http://cookingspace.com	6	Salmon Rice	In a heavy pot suitable for cooking rice, add the finely chopped onion and about one-third of the chicken broth. Cover and cook over low heat for a few minutes. Add half the sesame oil, the washed brown rice and the pine (pinyon) nuts. Add the water and bring to a boil. As soon as the water comes to a boil, turn down the heat as low as possible, cover tightly and cook for about 20 to 25 minutes or until the mixture dries out and the rice is tender.  Wash the broccoli, discarding only the very bottom of the stems. Separate the florets into bite size pieces. Note: The broccoli stems are very nutritious, but will need to be cooked slightly longer than the rest of the broccoli. Cut them off just just under the tops and slice thinly or dice into 1/8" pieces.  Mix the prepared broccoli stems, the rest of the chicken broth, and the rest of the sesame oil in a heavy skillet. Cook covered over medium heat for about 5 or 6 minutes. Stir in the broccoli florets and cook for about one additional minute. Remove the skin and bones from the salmon and add to the pan. Cook covered for just under 10 minutes over low heat until done, being careful not to overcook.  Serve the rice on one side of each plate and add salmon mixture from the skillet on the other side. Add a bit of fresh parsley garnish, if available.
+14	http://cookingspace.com	13	Fresh apple desert	Eat as is.
+15	http://cookingspace.com	11	Peanut butter toast	
+16	http://cookingspace.com	29	Bake potato - plain	Wash potatoes and bake in 325 oven for about 90 minutes.
+17	http://cookingspace.com	22	Taco flavored tortilla chips	Eat as-is as a side dish.
+18	http://cookingspace.com	5	Arroz con Pollo	Heat oil in a large skillet over moderately high heat. Add lightly salted chicken pieces and brown on all sides for about 15 minutes. Reduce heat to low. Add 1/3 cup of water and simmer for approximately 10 minutes. Remove chicken and juices from pan and set aside. Return 3 tablespoons of liquid to pan, add onion, rice and green pepper and cook over moderately high head stirring occasionally until mixture is lightly browned. Return de-fatted remaining pan juices to pan with two cups of water, tumeric, 1 tsp. Salt, pepper, broth mix and pimiento.  Bring rice to a boil, arrange browned chicken on top. Reduce heat to moderately low, cover and cook 10 minutes. Sprinkle peas over chicken, cover and continue cooking 5 to 10 minutes.
+19	http://cookingspace.com	34	Eggs, bacon, and toast with butter	Fry eggs in half the butter. Cook bacon and drain.  Use remaining butter on toast.
+20	http://cookingspace.com	23	Cheddar Cheese Nachos	Cover taco flavored tortilla chips with cheese and onions (optional) and diced fresh tomatoes.  Add Tabasco Sauce or red taco sauce, too taste.  Cook in microwave oven until the cheese has melted.
+21	http://cookingspace.com	14	Cheese Piza	Eat as is.
+22	http://cookingspace.com	1	Gazpacho	Combine the onions, garlic, green peppers and tomatoes. Force through a sieve or puree in a blender. Add the salt, pepper and paprika. Add the olive oil gradually, beating steadily. Add the vinegar and water and stir well. Season to taste. Refrigerate and chill for at least two hours, using a wooden or glass bowl; do not use a metal bowl. Add the cucumber slices before serving.  If desired, slices of toast rubbed with garlic may be served with the Gazpacho.
+23	http://cookingspace.com	33	Tossed summer salad	Wash lettuce, carrot, onion, and cucumber; cut into bite size pieces.  Add remaining ingredients and mix well.
+24	http://cookingspace.com	20	Kraft Macaroni &amp; Cheese Dinner	Cook as per directions.
+25	http://cookingspace.com	2	Curried Chicken Salad	Toast cumin seeds for one or two minutes until they become fragrant and slightly browned. Peel and slice peaches. Bone and skin chicken breasts. Thinly slice celery and green onions. Dice unpeeled tart apples.  Mix oil, one tsp. of curry powder and one tsp. of cumin. Coat chicken breasts and broil until done. Set aside.  In a medium bowl add peaches, celery, green onions, yogurt, and remaining curry and cumin. Add cut up chicken and mix well.  Garnish with peaches and cut up chives.
+26	http://cookingspace.com	16	Corn on the cob with butter, salt, and pepper	Boil or steam corn - cook to desired tenderness.  Season with butter, salt, and pepper.
+27	http://cookingspace.com	35	Bread Pudding	Cube bread and place in 13x9 inch pan. Combine cinnamon, nutmeg, orange and lemon peels, walnuts and raisins and sprinkle evenly over bread cubes. Beat egg yolks, maple syrup and baking soda. Scald the milk. Stir egg mixture and vanilla into milk and pur over bread mixture. Bake at 350 one hour or until golden.
+28	http://cookingspace.com	32	Orange Sherbet	Eat orange sherbet as-is.
+29	http://cookingspace.com	31	Blueberry Pie	Eat pie as prepared.
+30	http://cookingspace.com	27	White rice	Cook rice as per package directions.  If you buy your rice in bulk, cook with 1 part dry rice to 2 parts water. Cook in a tightly covered pan for 20 minutes or use a rice cooker.
+31	http://cookingspace.com	36	Cheese quesadilla	If you are making two small quesadillas, you can cook them together in a large frying pan, or separately in a small pan. One large tortilla can be substituted for 2 8-inch tortillas.  Add oil to a pan and set heat for medium. Cook one side of the tortillas until the cooked side starts to slightly blacken.  The tomato and large olives should be coarsely chopped.  Turn tortillas and add all ingredients, mixed, and being careful to keep ingredients away from the edges of the tortillas. Lower heat slightly, and cook until the cheese melts and the outer side of the tortillas slightly blacken.
+32	http://cookingspace.com	37	Salmon and Scallions Soup	Wash and chop scallions. Mix scallions with olive oil, salt, and pepper and start to cook over low heat for 1 minute, then add milk and cook under medim heat until the milk has boiled for one minute.  While the milk is heating, remove the skin from the salmon and cut into small pieces.  Add the salmon to the lightly boiling milk, reduce heat to very low, cover, and cook for 10 minutes.
+\.
+
+
+--
+-- Name: scraped_recipe_ingredients_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres; Tablespace: 
+--
+
+ALTER TABLE ONLY scraped_recipe_ingredients
+    ADD CONSTRAINT scraped_recipe_ingredients_pkey PRIMARY KEY (id);
+
+
+--
+-- Name: scraped_recipes_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres; Tablespace: 
+--
+
+ALTER TABLE ONLY scraped_recipes
+    ADD CONSTRAINT scraped_recipes_pkey PRIMARY KEY (id);
+
+
+--
+-- Name: public; Type: ACL; Schema: -; Owner: postgres
+--
+
+REVOKE ALL ON SCHEMA public FROM PUBLIC;
+REVOKE ALL ON SCHEMA public FROM postgres;
+GRANT ALL ON SCHEMA public TO postgres;
+GRANT ALL ON SCHEMA public TO PUBLIC;
+
+
+--
+-- PostgreSQL database dump complete
+--
+

@@ -1,0 +1,6 @@
+<%= javascript_include_tag :all, :cache => true %>
+
+<h1>Local Search for Names on Wikipedia</h1>
+<p>Use auto-complete to find a name and then visit the Wikipedia page:</p>
+
+<%= text_field_with_auto_complete :name_link, :name, :size=>85 %>

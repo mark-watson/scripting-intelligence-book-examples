@@ -1,0 +1,17 @@
+<%= rdfa_html %>
+
+<%= rdfa_name "Mark Watson" %>
+
+<br />
+
+<% rdfa_class 'rdfs:Resource' do %>
+  <a href="http://cookingspace.com">Food nutrients</a>
+<%end%>
+
+<br />
+
+<% rdfa_triple 'decl:title', 'Healthy Recipes', "http://cookingspace.com" do %>Look up recipes with their nutrients<%end%>
+
+<br />
+<%= rdfa_link_to 'decl:title', "Mark Watson: Ruby and Java Consultant", "http://markwatson.com" %>
+

@@ -1,0 +1,374 @@
+.right { float: right; padding: 4px;}
+.left { float: left; padding: 4px;}
+
+body {
+  font-family: sans-serif;
+  background: #fff; /* #9CBC6F; */  /* lightgray;  */
+  margin: 2;
+  text-align: left;  
+}
+
+
+#whole_page {
+  width: 47em;
+  margin: auto;
+  padding: 0;
+  text-align: left;
+  border-width:  0 1px 1px 1px;
+  border-color:  black;
+  border-style:  solid;
+}
+
+#header {
+  color: white;
+  /*background: #EDF1F5;*/ /* maroon; */  /* No "ruby" defined in HTML color names! */
+  font-size: 24pt;
+  padding: 0.25em;
+  margin-bottom: 0;
+}
+
+#nav {
+  height: 1.1em;
+  color: black;
+  font-size: 14pt;
+  font-weight: bold;
+  /*background: #ccffcc;*/
+  /*background: url("/images/salad3b.jpg"); */ /* url("/images/wood2.jpg"); */ /* #dDFfe5; */ /* #EDF1F5; */ /* #aaa; */
+  padding: 0.5em;
+  padding-bottom: 0.9em;
+  /*background-color: #eeeeee;*/
+  /*background-color: #ccffcc;*/
+}
+
+#nav a, #nav a:visited  {
+  /*color: maroon;*/
+  text-decoration: none;
+}
+
+#nav a:hover {
+  /*border-top: 2px dotted white;*/
+  color: blue;
+}
+
+#content {
+  height: 100%;
+  background:  #e4ffe4; /*white;*/
+  padding: 1em;
+}
+
+#content h1 {
+  font-size: 18pt;
+}
+
+/* Hack to get IE to display fieldset/legend correctly */ 
+html fieldset { 
+  position: relative; 
+} 
+
+html legend { 
+  position:absolute; 
+  top: -1em; 
+  left: .5em; 
+} 
+
+html fieldset { 
+  position: relative; 
+  margin-top:1em; 
+  padding-top:2em; 
+  padding-bottom: 2em; 
+} 
+
+/* Form Styles */ 
+fieldset { 
+  background: #ddd; 
+} 
+
+legend { 
+  color: white; 
+  background: maroon; 
+  padding: .4em 1em; 
+} 
+
+label { 
+  width: 10em; 
+  float: left; 
+  text-align: right; 
+  margin-right: 0.2em; 
+  display: block; 
+} 
+
+.form_row { 
+  white-space: nowrap; 
+  padding-bottom: .5em; 
+} 
+
+.submit { 
+  margin-left: 15em; 
+}
+
+/* Debug Style */
+
+#debug {
+  margin-top: 1em;
+  margin-left: auto;
+}
+#debug a, #debug a.visited {
+  text-decoration: none;
+  color: maroon;
+}
+fieldset.debug_info {
+  text-align: left; 
+  margin: 1em; 
+  background: #eee;
+}
+
+/* Error Reporting Styles */ 
+.fieldWithErrors { 
+  margin: 2px; 
+  padding: 2px; 
+  background-color: red; 
+  display: table; 
+} 
+
+#errorExplanation { 
+  border: 2px solid red; 
+  padding: 7px; 
+  padding-bottom: 12px; 
+  margin-bottom: 20px; 
+  background-color: #f0f0f0; 
+} 
+
+#errorExplanation h2 { 
+  text-align: left; 
+  font-weight: bold; 
+  padding: 5px 5px 5px 15px; 
+  font-size: 12pt; 
+  margin: -7px; 
+  background-color: #c00; 
+  color: #fff; 
+} 
+
+#errorExplanation p { 
+  color: #333; 
+  margin-bottom: 0; 
+  padding: 5px; 
+} 
+
+#errorExplanation ul li { 
+  font-size: 11pt; 
+  list-style: square; 
+} 
+
+/* Flash Notice Style */ 
+#notice { 
+  border: 1px solid green; 
+  padding: 1em; 
+  margin: 1em; 
+  margin-bottom: 2em; 
+  background-color: lightgray; 
+  font: bold smaller sans-serif; 
+}
+
+
+/* Community Styles */
+
+a, a#visited {
+  color: maroon;
+  text-decoration: none;
+}
+
+.letter, .letter_current {
+  width: 1em;
+  text-align: center;
+  border: 1px solid gray; 
+  background: #fff; 
+  padding: 5px 2px 1px 2px; 
+  float: left; 
+  margin: 2px
+}
+
+.letter:hover {
+  background: #fe4;
+}
+
+.letter_current {
+  background: #fe4;
+  font-weight: bold;
+  border: 1px solid black;
+}
+
+table.users {
+  background: #fff;
+  margin-left: 2em;
+}
+
+table.users td.bottom {
+  border-top: 1px solid #999;
+  padding-top: 10px;
+}
+
+table.users th {
+  color: white;
+  background: maroon;
+  font-weight: normal;
+}
+
+table.users th a {
+  color: white;
+  text-decoration: underline;
+}
+
+table.users tr.even {
+  background: #ddd;
+}
+
+table.users tr.odd {
+  background: #eee;
+}
+
+.auto_complete {
+      position:absolute;
+      width:250px;
+      background-color:white;
+      border:1px solid #888;
+      margin:0px;
+      padding:0px;
+      font: smaller;
+      z-index: 5;
+}
+
+.auto_complete ul {
+      list-style-type: none;
+      margin:0px;
+      padding:0px;
+      font: smaller;
+      z-index: 5;
+}
+
+.auto_complete ul li.selected 
+{ 
+        background-color: #bbf;
+      font: smaller;
+      z-index: 5;
+}
+
+.auto_complete ul li {
+      list-style-type: none;
+      display:block;
+      margin:0;
+      padding:2px;
+      height:16px;
+      font: smaller;
+      z-index: 5;
+}
+
+.dailytotals
+{
+	border: 1px maroon solid;
+        background: white;
+        padding: 8px;
+   /*   width: 300px;  */
+}
+
+.dottedBox
+{
+	border: 1px maroon solid;
+        background: white;
+        padding: 12px;
+        padding-top: 3px;
+        /*background: url("/images/rice3.jpg");*/
+	margin-bottom: 2px;
+	margin-top: 2px;
+	margin-left: 9px;
+	margin-right: 2px;
+    /*height: 99%;*/
+}
+
+
+.star-rating,
+.star-rating a:hover,
+.star-rating a:active,
+.star-rating a:focus,
+.star-rating .current-rating{
+	background: url(/images/star.gif) left -1000px repeat-x;
+}
+.star-rating{
+	position:relative;
+	width:125px;
+	height:25px;
+	overflow:hidden;
+	list-style:none;
+	margin:0;
+	padding:0;
+	background-position: left top;
+}
+.star-rating li{
+	display: inline;
+}
+.star-rating a, 
+.star-rating .current-rating{
+	position:absolute;
+	top:0;
+	left:0;
+	text-indent:-1000em;
+	height:25px;
+	line-height:25px;
+	outline:none;
+	overflow:hidden;
+	border: none;
+}
+.star-rating a:hover,
+.star-rating a:active,
+.star-rating a:focus{
+	background-position: left bottom;
+}
+.star-rating a.one-star{
+	width:20%;
+	z-index:6;
+}
+.star-rating a.two-stars{
+	width:40%;
+	z-index:5;
+}
+.star-rating a.three-stars{
+	width:60%;
+	z-index:4;
+}
+.star-rating a.four-stars{
+	width:80%;
+	z-index:3;
+}
+.star-rating a.five-stars{
+	width:100%;
+	z-index:2;
+}
+.star-rating .current-rating{
+	z-index:1;
+	background-position: left center;
+}	
+
+/* for an inline rater */
+.inline-rating{
+	display:-moz-inline-block;
+	display:-moz-inline-box;
+	display:inline-block;
+	vertical-align: middle;
+}
+
+/* smaller star */
+.small-star{
+	width:50px;
+	height:10px;
+}
+.small-star,
+.small-star a:hover,
+.small-star a:active,
+.small-star a:focus,
+.small-star .current-rating{
+	background-image: url(/images/star_small.gif);
+	line-height: 10px;
+	height: 10px;
+}
+
+
+
