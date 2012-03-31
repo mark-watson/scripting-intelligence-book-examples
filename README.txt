@@ -1,11 +1,17 @@
 Dear Reader,
 
 That you for purchasing my book. This directory contains the source code
-and data for the examples in my book. As an alternative to installing
-all of the tools and libraries that I use in the examples, you can use the
-Amazon Machine Image (AMI) that I have created (see Appendix A for details).
-The AMI has MySLQ, PostgreSQL, Tomcat, Sesame, Nutch, Solr, D2R, Redland,
-AllegroGraph, etc. installed and configured.
+and data for the examples in my book.
+
+When I wrote the examples for this book I created an Amazon EC2 AMI with
+the examples installed and running (as described in Appendix A). This AMI
+is very out of date and I suggest that you not try to use it.
+
+I also suggest that you skip the old Rails demo programs in Part 4 of the book
+for reasons that I document on the errata web page for this book
+(http://markwatson.com/books/web3_book/).
+
+The code in Parts 1, 2, and 3 of the book, while old, should still be relevant and useful.
 
 There are subdirectories for each part of my book. I did not separate the examples
 into directories for individual chapters because sometimes examples for different
