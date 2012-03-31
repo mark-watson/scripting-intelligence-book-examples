@@ -1,6 +1,10 @@
 Dear Reader,
 
-That you for purchasing my book. This directory contains the source code and data for the examples in my book. Even if you didn't buy the book, hopefully you will still find the example code useful.
+That you for purchasing my book:
+
+"Scripting Intelligence, Web 3.0 Information Gathering and Processing"  APress 2009
+
+This directory contains the source code and data for the examples in my book. Even if you didn't buy the book, hopefully you will still find the example code useful.
 
 When I wrote the examples for this book I created an Amazon EC2 AMI with the examples installed and running (as described in Appendix A). This AMI is very out of date and I suggest that you not try to use it.
 
