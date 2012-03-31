@@ -14,17 +14,13 @@ Each subdirectory also contains a README.txt file. Many of the examples require 
 
 Here is a summary of the table of contents for the book:
 
-PART 1 Text Processing: Natural Language Processing, Parsing Common Document Types,
-  Cleaning, Segmenting, and Spell-Checking Text
+PART 1 Text Processing: Natural Language Processing, Parsing Common Document Types, Cleaning, Segmenting, and Spell-Checking Text
 
-PART 2 The Semantic Web: Using RDF and RDFS Data Formats, Delving Into RDF Data Stores,
-  Performing SPARQL Queries and Understanding Reasoning, Implementing SPARQL Endpoint Web Portals
+PART 2 The Semantic Web: Using RDF and RDFS Data Formats, Delving Into RDF Data Stores, Performing SPARQL Queries and Understanding Reasoning, Implementing SPARQL Endpoint Web Portals
 
-PART 3 Information Gathering and Storage: Relational Databases, Indexing and Search,
-  Using Web Scraping to Create Semantic Relations, Strategies for Large-Scale Data Storage
+PART 3 Information Gathering and Storage: Relational Databases, Indexing and Search, Using Web Scraping to Create Semantic Relations, Strategies for Large-Scale Data Storage
 
-PART 4 Information Publishing: Creating Web Mashups, Performing Large-Scale Data Processing,
-  Building Information Web Portals
+PART 4 Information Publishing: Creating Web Mashups, Performing Large-Scale Data Processing, Building Information Web Portals
   
 Best regards,
 Mark Watson
