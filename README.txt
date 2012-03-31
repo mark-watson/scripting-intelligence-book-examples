@@ -12,6 +12,9 @@ for reasons that I document on the errata web page for this book
 (http://markwatson.com/books/web3_book/).
 
 The code in Parts 1, 2, and 3 of the book, while old, should still be relevant and useful.
+Almost all of the code is Ruby (with some Java Hadoop example code) and has useful
+utilities for Natural Language Processing (NLP), semantic web, accessing both relational
+and NoSQL type data sotres, etc.
 
 There are subdirectories for each part of my book. I did not separate the examples
 into directories for individual chapters because sometimes examples for different
