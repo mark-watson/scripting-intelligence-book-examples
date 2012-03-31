@@ -30,5 +30,16 @@ current information for this book will be kept at: http://markwatson.com/books/w
 This link also will point you to information and resources on the APress
 web site.
 
+Here is the table of contents for the book:
+
+PART 1 Text Processing: Natural Language Processing, Parsing Common Document Types,
+  Cleaning, Segmenting, and Spell-Checking Text
+PART 2 The Semantic Web: Using RDF and RDFS Data Formats, Delving Into RDF Data Stores,
+  Performing SPARQL Queries and Understanding Reasoning, Implementing SPARQL Endpoint Web Portals
+PART 3 Information Gathering and Storage: Relational Databases, Indexing and Search,
+  Using Web Scraping to Create Semantic Relations, Strategies for Large-Scale Data Storage
+PART 3 Information Publishing: Creating Web Mashups, Performing Large-Scale Data Processing,
+  Building Information Web Portals
+  
 Best regards,
 Mark Watson
